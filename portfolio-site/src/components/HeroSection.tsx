@@ -5,7 +5,7 @@ const HeroSection = () => {
   return (
     <HStack justifyContent="center">
       <Text>Hello, I'm David Perez</Text>
-      <Avatar size="2xl" bg="green" name="David Perez" src={AvatarLogo} />
+      <Avatar size="2xl" bg="green.500" name="David Perez" src={AvatarLogo} />
     </HStack>
   );
 };
