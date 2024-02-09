@@ -5,12 +5,16 @@ const HeroSection = () => {
   return (
     <HStack justifyContent="center">
       <VStack>
-        <Heading as="h1" size="4xl" color="green.300" padding="35px" mb="-50px">
+        <Heading as="h1" size="4xl" padding="35px" mb="-50px">
           David Perez
         </Heading>
         <Text fontSize="5xl">
           I'm a{" "}
-          <Box as="span" color="green.300">
+          <Box
+            as="span"
+            bgGradient="linear(to-l, #7928CA, green.300)"
+            bgClip="text"
+          >
             Developer
           </Box>
         </Text>
