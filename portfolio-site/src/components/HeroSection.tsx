@@ -2,11 +2,13 @@ import { HStack, Image } from "@chakra-ui/react";
 import Avatar from "../assets/Avatar.png";
 
 const HeroSection = () => {
-  return (
-    <HStack justifyContent="center">
-      <Image src={Avatar} />
-    </HStack>
-  );
+  return <Image src={Avatar} boxSize="350px" objectFit="cover" />;
 };
 
 export default HeroSection;
+
+{
+  /* <Show above="lg">
+  <HeroSection />
+</Show>; */
+}
