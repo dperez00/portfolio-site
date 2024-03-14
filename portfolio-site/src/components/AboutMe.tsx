@@ -1,9 +1,11 @@
-import { Heading, Text, VStack } from "@chakra-ui/react";
+import { HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import laptop from "../assets/laptop picture.jpg";
+import languages from "../assets/coding languages.png";
 
 const AboutMe = () => {
   return (
     <>
-      <VStack justifyContent="center" mt="50px" bgColor="#67d391">
+      <VStack justifyContent="center" mt="100px" bgColor="#67d391">
         <Heading as="h2" size="2xl">
           About Me
         </Heading>
@@ -25,6 +27,10 @@ const AboutMe = () => {
           me next.
         </Text>
       </VStack>
+      <HStack justifyContent="center" mt="20px" mb="50px">
+        <Image src={laptop} boxSize="200px" w="200px" objectFit="cover" />
+        <Image src={languages} boxSize="200px" w="200px" objectFit="cover" />
+      </HStack>
     </>
   );
 };

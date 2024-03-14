@@ -1,4 +1,4 @@
-import { HStack, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import Avatar from "../assets/Avatar.png";
 
 const HeroSection = () => {
