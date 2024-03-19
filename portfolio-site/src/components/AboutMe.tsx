@@ -1,4 +1,12 @@
-import { HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Grid,
+  GridItem,
+  HStack,
+  Heading,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import laptop from "../assets/laptop picture.jpg";
 import languages from "../assets/coding languages.png";
 
@@ -28,8 +36,8 @@ const AboutMe = () => {
         </Text>
       </VStack>
       <HStack justifyContent="center" mt="20px" mb="50px">
-        <Image src={laptop} boxSize="200px" w="200px" objectFit="cover" />
-        <Image src={languages} boxSize="200px" w="200px" objectFit="cover" />
+        <Image src={laptop} boxSize="300px" w="200px" objectFit="cover" />
+        <Image src={languages} boxSize="300px" w="200px" objectFit="cover" />
       </HStack>
     </>
   );
