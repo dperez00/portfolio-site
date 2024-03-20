@@ -1,23 +1,15 @@
-import {
-  Grid,
-  GridItem,
-  HStack,
-  Heading,
-  Image,
-  Text,
-  VStack,
-} from "@chakra-ui/react";
+import { Box, HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import laptop from "../assets/laptop picture.jpg";
 import languages from "../assets/coding languages.png";
 
 const AboutMe = () => {
   return (
     <>
-      <VStack justifyContent="center" mt="100px" bgColor="#67d391">
+      <HStack justifyContent="center" mt="100px" bgColor="#67d391">
         <Heading as="h2" size="2xl">
           About Me
         </Heading>
-      </VStack>
+      </HStack>
       <VStack justifyContent="center">
         <Heading as="h2" color="#7928CA">
           My journey as a developer
@@ -35,9 +27,23 @@ const AboutMe = () => {
           me next.
         </Text>
       </VStack>
-      <HStack justifyContent="center" mt="20px" mb="50px">
-        <Image src={laptop} boxSize="300px" w="200px" objectFit="cover" />
-        <Image src={languages} boxSize="300px" w="200px" objectFit="cover" />
+      <HStack maxW="100%" justifyContent="center" mt="20px" mb="50px">
+        {/* <Image src={laptop} boxSize="300px" w="200px" objectFit="cover" />
+        <Image src={languages} boxSize="300px" w="200px" objectFit="cover" /> */}
+        <Box maxW="100%" h="auto">
+          <Image
+            src={laptop}
+            boxSize={["150px", "200px", "300px", "350px"]}
+            objectFit="cover"
+          />
+        </Box>
+        <Box maxW="100%" h="auto">
+          <Image
+            src={languages}
+            boxSize={["150px", "200px", "300px", "350px"]}
+            objectFit="cover"
+          />
+        </Box>
       </HStack>
     </>
   );
