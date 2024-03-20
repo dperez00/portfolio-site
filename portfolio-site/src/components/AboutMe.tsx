@@ -1,6 +1,7 @@
 import { Box, HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
 import laptop from "../assets/laptop picture.jpg";
 import languages from "../assets/coding languages.png";
+import coding from "../assets/coding.jpg";
 
 const AboutMe = () => {
   return (
@@ -40,6 +41,13 @@ const AboutMe = () => {
         <Box maxW="100%" h="auto">
           <Image
             src={languages}
+            boxSize={["150px", "200px", "300px", "350px"]}
+            objectFit="cover"
+          />
+        </Box>
+        <Box maxW="100%" h="auto">
+          <Image
+            src={coding}
             boxSize={["150px", "200px", "300px", "350px"]}
             objectFit="cover"
           />
