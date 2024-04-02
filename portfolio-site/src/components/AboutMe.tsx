@@ -1,7 +1,17 @@
-import { Box, HStack, Heading, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Grid,
+  HStack,
+  Heading,
+  Image,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import laptop from "../assets/laptop picture.jpg";
 import languages from "../assets/coding languages.png";
 import coding from "../assets/coding.jpg";
+import javascript from "../assets/javascript picture.jpg";
 
 const AboutMe = () => {
   return (
@@ -29,8 +39,6 @@ const AboutMe = () => {
         </Text>
       </VStack>
       <HStack maxW="100%" justifyContent="center" mt="20px" mb="50px">
-        {/* <Image src={laptop} boxSize="300px" w="200px" objectFit="cover" />
-        <Image src={languages} boxSize="300px" w="200px" objectFit="cover" /> */}
         <Box maxW="100%" h="auto">
           <Image
             src={laptop}
@@ -48,6 +56,13 @@ const AboutMe = () => {
         <Box maxW="100%" h="auto">
           <Image
             src={coding}
+            boxSize={["150px", "200px", "300px", "350px"]}
+            objectFit="cover"
+          />
+        </Box>
+        <Box maxW="100%" h="auto">
+          <Image
+            src={javascript}
             boxSize={["150px", "200px", "300px", "350px"]}
             objectFit="cover"
           />
