@@ -1,10 +1,12 @@
 import {
   Box,
+  Card,
   Flex,
   Grid,
   HStack,
   Heading,
   Image,
+  SimpleGrid,
   Text,
   VStack,
 } from "@chakra-ui/react";
@@ -12,6 +14,7 @@ import laptop from "../assets/laptop picture.jpg";
 import languages from "../assets/coding languages.png";
 import coding from "../assets/coding.jpg";
 import javascript from "../assets/javascript picture.jpg";
+import screens from "../assets/money screens.jpg";
 
 const AboutMe = () => {
   return (
@@ -38,7 +41,7 @@ const AboutMe = () => {
           me next.
         </Text>
       </VStack>
-      <HStack maxW="100%" justifyContent="center" mt="20px" mb="50px">
+      {/* <HStack maxW="100%" justifyContent="center" mt="20px" mb="50px">
         <Box maxW="100%" h="auto">
           <Image
             src={laptop}
@@ -67,7 +70,25 @@ const AboutMe = () => {
             objectFit="cover"
           />
         </Box>
-      </HStack>
+      </HStack> */}
+
+      {/* build a 2x2 grid to display images */}
+      <Flex justifyContent="center">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="20px" mb="50px">
+          <Card maxW="300px" maxH="300px">
+            <Image src={laptop} boxSize="100%" />
+          </Card>
+          <Card maxW="300px" maxH="300px">
+            <Image src={screens} boxSize="100%" />
+          </Card>
+          <Card maxW="300px" maxH="300px">
+            <Image src={languages} boxSize="100%" />
+          </Card>
+          <Card maxW="300px" maxH="300px">
+            <Image src={coding} boxSize="100%" />
+          </Card>
+        </SimpleGrid>
+      </Flex>
     </>
   );
 };
