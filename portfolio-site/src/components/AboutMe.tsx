@@ -75,10 +75,10 @@ const AboutMe = () => {
       {/* build a 2x2 grid to display images */}
       <Flex justifyContent="center">
         <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="20px" mb="50px">
-          <Card maxW="300px" maxH="300px">
+          <Card maxW="300px" maxH="200px">
             <Image src={laptop} boxSize="100%" />
           </Card>
-          <Card maxW="300px" maxH="300px">
+          <Card maxW="300px" maxH="200px">
             <Image src={screens} boxSize="100%" />
           </Card>
           <Card maxW="300px" maxH="300px">
