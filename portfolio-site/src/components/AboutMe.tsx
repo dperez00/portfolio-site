@@ -1,8 +1,6 @@
 import {
-  Box,
   Card,
   Flex,
-  Grid,
   HStack,
   Heading,
   Image,
@@ -10,10 +8,9 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import laptop from "../assets/laptop picture.jpg";
 import languages from "../assets/coding languages.png";
 import coding from "../assets/coding.jpg";
-import javascript from "../assets/javascript picture.jpg";
+import laptop from "../assets/laptop picture.jpg";
 import screens from "../assets/money screens.jpg";
 
 const AboutMe = () => {
