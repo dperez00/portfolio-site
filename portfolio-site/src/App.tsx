@@ -3,6 +3,7 @@ import Banner from "./components/Banner";
 import NavBar from "./components/NavBar";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <GridItem area="main">
         <Banner />
         <AboutMe />
+        <Skills />
         <Projects />
       </GridItem>
     </Grid>

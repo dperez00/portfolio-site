@@ -1,13 +1,14 @@
 import { HStack, Heading } from "@chakra-ui/react";
+import React from "react";
 
-const Projects = () => {
+const Skills = () => {
   return (
-    <HStack justifyContent="center" mt="100px">
+    <HStack justifyContent="center">
       <Heading as="h2" size="2xl">
-        Projects
+        Skills
       </Heading>
     </HStack>
   );
 };
 
-export default Projects;
+export default Skills;
