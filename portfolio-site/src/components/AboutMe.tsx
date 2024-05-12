@@ -16,15 +16,15 @@ import screens from "../assets/money screens.jpg";
 const AboutMe = () => {
   return (
     <>
-      <HStack justifyContent="center" mt="100px" bgColor="#67d391">
-        <Heading as="h2" size="2xl">
+      <HStack justifyContent="center" mt="250px">
+        <p>Get To Know More</p>
+      </HStack>
+      <HStack justifyContent="center">
+        <Heading as="h1" fontSize="48px" color="#67d391" mb="32px">
           About Me
         </Heading>
       </HStack>
       <VStack justifyContent="center">
-        <Heading as="h2" color="#7928CA">
-          My journey as a developer
-        </Heading>
         <Text width="80%" as="b" fontSize="lg">
           Hello! My name is David. I embarked on my journey as a web developer
           in 2021, and since then, I've honed my skills to create engaging and
@@ -38,40 +38,9 @@ const AboutMe = () => {
           me next.
         </Text>
       </VStack>
-      {/* <HStack maxW="100%" justifyContent="center" mt="20px" mb="50px">
-        <Box maxW="100%" h="auto">
-          <Image
-            src={laptop}
-            boxSize={["150px", "200px", "300px", "350px"]}
-            objectFit="cover"
-          />
-        </Box>
-        <Box maxW="100%" h="auto">
-          <Image
-            src={languages}
-            boxSize={["150px", "200px", "300px", "350px"]}
-            objectFit="cover"
-          />
-        </Box>
-        <Box maxW="100%" h="auto">
-          <Image
-            src={coding}
-            boxSize={["150px", "200px", "300px", "350px"]}
-            objectFit="cover"
-          />
-        </Box>
-        <Box maxW="100%" h="auto">
-          <Image
-            src={javascript}
-            boxSize={["150px", "200px", "300px", "350px"]}
-            objectFit="cover"
-          />
-        </Box>
-      </HStack> */}
-
       {/* build a 2x2 grid to display images */}
       <Flex justifyContent="center">
-        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="20px" mb="50px">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="32px" mb="50px">
           <Card maxW="300px" maxH="200px">
             <Image src={laptop} boxSize="100%" />
           </Card>
