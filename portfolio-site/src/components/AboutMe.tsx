@@ -31,16 +31,15 @@ const AboutMe = () => {
           dynamic websites, such as the one you're viewing now. My passion lies
           in crafting digital experiences that not only captivate users but also
           drive business growth. I've gained substantial experience working with
-          technologies like React, TypeScript, and Shopify. As I continue on
-          this exciting path, I look forward to the opportunities it will bring,
-          the challenges I'll overcome, and the diverse individuals I'll have
-          the pleasure of meeting. I'm thrilled to see where this journey takes
-          me next.
+          frontend technologies. As I continue on this exciting path, I look
+          forward to the opportunities it will bring, the challenges I'll
+          overcome, and the diverse individuals I'll have the pleasure of
+          meeting. I'm thrilled to see where this journey takes me next.
         </Text>
       </VStack>
       {/* build a 2x2 grid to display images */}
       <Flex justifyContent="center">
-        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="32px" mb="50px">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="32px" mb="250px">
           <Card maxW="300px" maxH="200px">
             <Image src={laptop} boxSize="100%" />
           </Card>

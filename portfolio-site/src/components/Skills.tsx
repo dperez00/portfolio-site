@@ -1,15 +1,12 @@
+import { CheckCircleIcon } from "@chakra-ui/icons";
 import {
   Card,
   CardBody,
   CardHeader,
-  Flex,
-  Grid,
   HStack,
   Heading,
   SimpleGrid,
 } from "@chakra-ui/react";
-import { CheckCircleIcon } from "@chakra-ui/icons";
-import React from "react";
 
 const Skills = () => {
   return (
@@ -22,14 +19,20 @@ const Skills = () => {
           Experience
         </Heading>
       </HStack>
-      <Card alignItems="center" borderRadius="32px" padding="24px">
+      <Card
+        alignItems="center"
+        borderRadius="32px"
+        padding="24px"
+        maxW="850px"
+        mx="auto"
+      >
         <CardHeader>
           <Heading as="h2" fontSize="28px" mb="32px">
             Frontend Development
           </Heading>
         </CardHeader>
         <CardBody>
-          <SimpleGrid columns={2} spacing={12}>
+          <SimpleGrid columns={3} spacing={20}>
             <HStack>
               <CheckCircleIcon color="#67d391" />
               <Heading as="h3" fontSize="24px">
@@ -76,6 +79,12 @@ const Skills = () => {
               <CheckCircleIcon color="#67d391" />
               <Heading as="h3" fontSize="24px">
                 Bootstrap
+              </Heading>
+            </HStack>
+            <HStack>
+              <CheckCircleIcon color="#67d391" />
+              <Heading as="h3" fontSize="24px">
+                Material UI
               </Heading>
             </HStack>
           </SimpleGrid>
