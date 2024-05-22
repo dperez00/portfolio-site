@@ -6,13 +6,14 @@ import {
   HStack,
   Heading,
   SimpleGrid,
+  Text,
 } from "@chakra-ui/react";
 
 const Skills = () => {
   return (
     <>
       <HStack justifyContent="center">
-        <p>Explore My</p>
+        <Text>Explore My</Text>
       </HStack>
       <HStack justifyContent="center">
         <Heading as="h1" fontSize="48px" color="#67d391" mb="32px">
@@ -25,6 +26,7 @@ const Skills = () => {
         padding="24px"
         maxW="850px"
         mx="auto"
+        mb="250px"
       >
         <CardHeader>
           <Heading as="h2" fontSize="28px" mb="32px">

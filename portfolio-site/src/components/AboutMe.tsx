@@ -17,7 +17,7 @@ const AboutMe = () => {
   return (
     <>
       <HStack justifyContent="center" mt="250px">
-        <p>Get To Know More</p>
+        <Text>Get To Know More</Text>
       </HStack>
       <HStack justifyContent="center">
         <Heading as="h1" fontSize="48px" color="#67d391" mb="32px">

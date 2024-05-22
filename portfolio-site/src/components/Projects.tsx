@@ -1,12 +1,11 @@
 import {
+  Button,
+  Card,
+  CardBody,
+  CardHeader,
   HStack,
   Heading,
-  Card,
-  CardHeader,
-  CardBody,
-  Box,
   Text,
-  Button,
 } from "@chakra-ui/react";
 
 // write a function that maps Projects into cards.
@@ -24,13 +23,24 @@ const projects: Project[] = [
     title: "Cosmos Forge",
     description: "Web Design & Development",
   },
+  {
+    title: "Cosmos Forge Affiliate",
+    description: "Theme Customization",
+  },
+  {
+    title: "Beaningful Coffee",
+    description: "Web Design & Development",
+  },
 ];
 
 const Projects = () => {
   return (
     <>
-      <HStack justifyContent="center" mt="100px">
-        <Heading as="h2" fontSize="48px" mb="32px">
+      <HStack justifyContent="center">
+        <Text>Explore My Recent</Text>
+      </HStack>
+      <HStack justifyContent="center">
+        <Heading as="h2" fontSize="48px" color="#67d391" mb="32px">
           Projects
         </Heading>
       </HStack>
