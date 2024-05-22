@@ -84,7 +84,7 @@ const Skills = () => {
             <HStack>
               <CheckCircleIcon color="#67d391" />
               <Heading as="h3" fontSize="24px">
-                Material UI
+                GitHub Copilot
               </Heading>
             </HStack>
           </SimpleGrid>
