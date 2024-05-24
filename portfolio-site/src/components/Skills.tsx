@@ -13,7 +13,7 @@ const Skills = () => {
   return (
     <>
       <HStack justifyContent="center">
-        <Text>Explore My</Text>
+        <Text fontSize="18px">Explore My</Text>
       </HStack>
       <HStack justifyContent="center">
         <Heading as="h1" fontSize="48px" color="#67d391" mb="32px">
@@ -22,7 +22,7 @@ const Skills = () => {
       </HStack>
       <Card
         alignItems="center"
-        borderRadius="32px"
+        borderRadius="6px"
         padding="24px"
         maxW="850px"
         mx="auto"

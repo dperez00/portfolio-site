@@ -53,7 +53,7 @@ const Projects = () => {
   return (
     <>
       <HStack justifyContent="center">
-        <Text>Explore My Recent</Text>
+        <Text fontSize="18px">Explore My Recent</Text>
       </HStack>
       <HStack justifyContent="center">
         <Heading as="h2" fontSize="48px" color="#67d391" mb="32px">
@@ -62,20 +62,28 @@ const Projects = () => {
       </HStack>
       <HStack justifyContent="center">
         {projects.map((project, index) => (
-          <Card key={index}>
+          <Card borderRadius="6px" key={index}>
             <CardBody>
               <Image
                 src={project.image}
                 alt={project.title}
                 boxSize="300px"
                 objectFit="fill"
+                mb={5}
               />
               <Heading as="h3" fontSize="24px">
                 {project.title}
               </Heading>
               <Text>{project.description}</Text>
             </CardBody>
-            <Button backgroundColor="#67d391">View Project</Button>
+            <Button
+              m={4}
+              borderRadius="6px"
+              width="60%"
+              backgroundColor="#67d391"
+            >
+              View Project
+            </Button>
           </Card>
         ))}
       </HStack>

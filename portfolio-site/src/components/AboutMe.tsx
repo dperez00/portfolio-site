@@ -17,7 +17,7 @@ const AboutMe = () => {
   return (
     <>
       <HStack justifyContent="center" mt="250px">
-        <Text>Get To Know More</Text>
+        <Text fontSize="18px">Get To Know More</Text>
       </HStack>
       <HStack justifyContent="center">
         <Heading as="h1" fontSize="48px" color="#67d391" mb="32px">
@@ -25,7 +25,7 @@ const AboutMe = () => {
         </Heading>
       </HStack>
       <VStack justifyContent="center">
-        <Text width="80%" as="b" fontSize="lg">
+        <Text width="80%" as="b" fontSize="22px">
           Hello! My name is David. I embarked on my journey as a web developer
           in 2021, and since then, I've honed my skills to create engaging and
           dynamic websites, such as the one you're viewing now. My passion lies
@@ -39,7 +39,7 @@ const AboutMe = () => {
       </VStack>
       {/* build a 2x2 grid to display images */}
       <Flex justifyContent="center">
-        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="32px" mb="250px">
+        <SimpleGrid columns={{ sm: 1, md: 2 }} gap={3} mt="50px" mb="250px">
           <Card maxW="300px" maxH="200px">
             <Image src={laptop} boxSize="100%" />
           </Card>
