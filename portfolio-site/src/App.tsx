@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import ContactMe from "./components/ContactMe";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Projects />
+        <ContactMe />
       </GridItem>
     </Grid>
   );

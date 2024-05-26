@@ -60,7 +60,7 @@ const Projects = () => {
           Projects
         </Heading>
       </HStack>
-      <HStack justifyContent="center">
+      <HStack justifyContent="center" mb="250px">
         {projects.map((project, index) => (
           <Card borderRadius="6px" key={index}>
             <CardBody>
