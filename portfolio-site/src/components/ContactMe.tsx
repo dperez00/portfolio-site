@@ -14,14 +14,26 @@ const ContactMe = () => {
         </Heading>
       </HStack>
       <HStack justifyContent="center">
-        <Box border="2px" borderColor="#67d391" borderRadius="32px">
+        <Box border="2px" borderColor="#7928CA" borderRadius="32px">
           <HStack gap="16px" margin="16px">
             <HStack>
-              <MdOutlineMailOutline />
+              <Box
+                borderRadius="full"
+                bgGradient="linear(to-l, #7928CA, green.300)"
+                p={1}
+              >
+                <MdOutlineMailOutline />
+              </Box>
               <Text fontSize="large">perez.david3001@gmail.com</Text>
             </HStack>
             <HStack>
-              <FaLinkedin />
+              <Box
+                borderRadius="full"
+                bgGradient="linear(to-l, #7928CA, green.300)"
+                p={1}
+              >
+                <FaLinkedin />
+              </Box>
               <Text fontSize="large">LinkedIn</Text>
             </HStack>
           </HStack>
