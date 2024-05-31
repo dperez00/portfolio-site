@@ -80,7 +80,7 @@ const Projects = () => {
               m={4}
               borderRadius="6px"
               width="60%"
-              backgroundColor="#67d391"
+              bgGradient="linear(to-l, #7928CA, green.300)"
             >
               View Project
             </Button>
