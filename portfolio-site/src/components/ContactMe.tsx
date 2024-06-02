@@ -13,7 +13,7 @@ const ContactMe = () => {
           Contact Me
         </Heading>
       </HStack>
-      <HStack justifyContent="center">
+      <HStack justifyContent="center" mb="150px">
         <Box border="2px" borderColor="#7928CA" borderRadius="32px">
           <HStack gap="16px" margin="16px">
             <HStack>
