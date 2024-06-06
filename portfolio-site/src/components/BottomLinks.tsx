@@ -1,4 +1,4 @@
-import { Box, HStack, List, ListItem, Text } from "@chakra-ui/react";
+import { HStack, List, ListItem, Text } from "@chakra-ui/react";
 
 const BottomLinks = () => {
   return (
