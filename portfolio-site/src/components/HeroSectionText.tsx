@@ -1,5 +1,7 @@
-import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { Box, HStack, Heading, Text, VStack } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 const HeroSectionText = () => {
   const [word, setWord] = useState("React Developer");
@@ -35,6 +37,22 @@ const HeroSectionText = () => {
             {word}
           </Box>
         </Text>
+        <HStack mt={4} spacing={4}>
+          <Box
+            borderRadius="full"
+            bgGradient="linear(to-l, #7928CA, green.300)"
+            p={1}
+          >
+            <FaLinkedin size="20px" />
+          </Box>
+          <Box
+            borderRadius="full"
+            bgGradient="linear(to-l, #7928CA, green.300)"
+            p={1}
+          >
+            <FaGithub size="20px" />
+          </Box>
+        </HStack>
       </VStack>
     </>
   );
