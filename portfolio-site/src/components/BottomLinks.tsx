@@ -2,7 +2,7 @@ import { Box, HStack, List, ListItem, Text } from "@chakra-ui/react";
 
 const BottomLinks = () => {
   return (
-    <Box>
+    <>
       <HStack justifyContent="center">
         <List display="flex" flexDirection="row">
           <ListItem mr={10} fontSize="20px">
@@ -22,7 +22,7 @@ const BottomLinks = () => {
           Copyright © 2024 David Perez. All Rights Reserved
         </Text>
       </HStack>
-    </Box>
+    </>
   );
 };
 
