@@ -1,7 +1,9 @@
 import { CheckCircleIcon } from "@chakra-ui/icons";
 import {
+  Button,
   Card,
   CardBody,
+  CardFooter,
   CardHeader,
   HStack,
   Heading,
@@ -30,7 +32,7 @@ const Skills = () => {
       >
         <CardHeader>
           <Heading as="h2" fontSize="28px" mb="32px">
-            Frontend Development
+            Frontend Development & Tools
           </Heading>
         </CardHeader>
         <CardBody>
@@ -91,6 +93,9 @@ const Skills = () => {
             </HStack>
           </SimpleGrid>
         </CardBody>
+        <CardFooter>
+          <Button>Next</Button>
+        </CardFooter>
       </Card>
     </>
   );
