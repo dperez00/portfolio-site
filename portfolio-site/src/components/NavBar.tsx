@@ -8,7 +8,7 @@ const NavBar = () => {
     <HStack justifyContent="space-between" padding="10px">
       <Image src={logo} boxSize="70px" />
       <HStack spacing="20px">
-        <Box _hover={{ cursor: "pointer" }}>
+        <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <Link
             to="home"
             smooth={true}
@@ -18,7 +18,7 @@ const NavBar = () => {
             Home
           </Link>
         </Box>
-        <Box _hover={{ cursor: "pointer" }}>
+        <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <Link
             to="about"
             smooth={true}
@@ -28,7 +28,7 @@ const NavBar = () => {
             About
           </Link>
         </Box>
-        <Box _hover={{ cursor: "pointer" }}>
+        <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <Link
             to="experience"
             smooth={true}
@@ -38,7 +38,7 @@ const NavBar = () => {
             Experience
           </Link>
         </Box>
-        <Box _hover={{ cursor: "pointer" }}>
+        <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <Link
             to="projects"
             smooth={true}
@@ -48,7 +48,7 @@ const NavBar = () => {
             Projects
           </Link>
         </Box>
-        <Box _hover={{ cursor: "pointer" }}>
+        <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <Link
             to="contact"
             smooth={true}
