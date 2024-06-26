@@ -5,6 +5,7 @@ import BottomLinks from "../components/BottomLinks";
 import ContactMe from "../components/ContactMe";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
+import { Element } from "react-scroll";
 
 const HomePage = () => {
   return (
@@ -16,10 +17,18 @@ const HomePage = () => {
     >
       <GridItem area="main">
         <Banner />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <ContactMe />
+        <Element name="about">
+          <AboutMe />
+        </Element>
+        <Element name="experience">
+          <Skills />
+        </Element>
+        <Element name="projects">
+          <Projects />
+        </Element>
+        <Element name="contact">
+          <ContactMe />
+        </Element>
         <BottomLinks />
       </GridItem>
     </Grid>
