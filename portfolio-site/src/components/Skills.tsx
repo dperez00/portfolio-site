@@ -15,10 +15,6 @@ import { useState } from "react";
 const Skills = () => {
   const [page, setPage] = useState(0);
 
-  /*skills to add: 
-    HTML, CSS, javascript, Shopify, React, TypeScript,
-    Bootstrap, Chakra UI, Material Ui, Git, Github, Github Copilot, 
-    React Router, React Query*/
   const skills = [
     [
       { name: "HTML" },
@@ -37,6 +33,7 @@ const Skills = () => {
       { name: "GitHub Copilot" },
       { name: "React Router" },
       { name: "React Query" },
+      { name: "Vite" },
     ],
     // add more as needed
   ];
