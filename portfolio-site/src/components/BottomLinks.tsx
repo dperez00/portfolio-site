@@ -1,20 +1,59 @@
-import { HStack, List, ListItem, Text } from "@chakra-ui/react";
+import { Box, HStack, List, ListItem, Text } from "@chakra-ui/react";
+import { Link } from "react-scroll";
 
 const BottomLinks = () => {
   return (
     <>
       <HStack justifyContent="center">
         <List display="flex" flexDirection="row">
-          <ListItem mr={10} fontSize="20px">
-            About
-          </ListItem>
-          <ListItem mr={10} fontSize="20px">
-            Experience
-          </ListItem>
-          <ListItem mr={10} fontSize="20px">
-            Projects
-          </ListItem>
-          <ListItem fontSize="20px">Contact</ListItem>
+          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
+            <ListItem mr={10}>
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                style={{ fontSize: "24px" }}
+              >
+                About
+              </Link>
+            </ListItem>
+          </Box>
+          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
+            <ListItem mr={10}>
+              <Link
+                to="experience"
+                smooth={true}
+                duration={500}
+                style={{ fontSize: "24px" }}
+              >
+                Experience
+              </Link>
+            </ListItem>
+          </Box>
+          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
+            <ListItem mr={10} fontSize="20px">
+              <Link
+                to="projects"
+                smooth={true}
+                duration={500}
+                style={{ fontSize: "24px" }}
+              >
+                Projects
+              </Link>
+            </ListItem>
+          </Box>
+          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
+            <ListItem>
+              <Link
+                to="contact"
+                smooth={true}
+                duration={500}
+                style={{ fontSize: "24px" }}
+              >
+                Contact
+              </Link>
+            </ListItem>
+          </Box>
         </List>
       </HStack>
       <HStack justifyContent="center">
