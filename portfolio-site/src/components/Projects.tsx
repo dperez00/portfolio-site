@@ -7,12 +7,14 @@ import {
   Image,
   Text,
 } from "@chakra-ui/react";
+import { useNavigate } from "react-router-dom";
 
 // write a function that maps Projects into cards.
 interface Project {
   title: string;
   description: string;
   image: string;
+  link: string;
 }
 
 const BRC = new URL("../assets/bottomrackclothing.png", import.meta.url);
@@ -31,25 +33,31 @@ const projects: Project[] = [
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
     image: BRC.toString(),
+    link: "/BottomRackClothing",
   },
   {
     title: "Cosmos Forge",
     description: "Web Design & Development",
     image: CosmosForge.toString(),
+    link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
     image: CosmosForgeAffiliate.toString(),
+    link: "/CosmosForgeAffiliate",
   },
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
     image: BeaningfulCoffee.toString(),
+    link: "/BeaningfulCoffee",
   },
 ];
 
 const Projects = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <HStack justifyContent="center">
@@ -81,6 +89,7 @@ const Projects = () => {
               borderRadius="6px"
               width="60%"
               bgGradient="linear(to-l, #7928CA, green.300)"
+              onClick={() => navigate(project.link)}
             >
               View Project
             </Button>
