@@ -1,4 +1,4 @@
-import { AspectRatio, Box, Heading, VStack } from "@chakra-ui/react";
+import { Box, Heading, VStack } from "@chakra-ui/react";
 
 const BottomRackClothing = () => {
   return (
@@ -13,13 +13,9 @@ const BottomRackClothing = () => {
           </Heading>
         </VStack>
       </Box>
-      <AspectRatio maxW="560px" ratio={16 / 9}>
-        <iframe
-          title="Bottom Rack Clothing"
-          src="https://www.loom.com/embed/10ee493c1fdb44b68b2a7ba9c12400f1?sid=5d3cef64-3486-4780-b0b2-da4cf73400cb"
-          allowFullScreen
-        />
-      </AspectRatio>
+      <Box>
+        <iframe src="https://www.loom.com/embed/10ee493c1fdb44b68b2a7ba9c12400f1?sid=3d14baad-6654-40a2-b842-790fbcc05e3f" />
+      </Box>
     </>
   );
 };
