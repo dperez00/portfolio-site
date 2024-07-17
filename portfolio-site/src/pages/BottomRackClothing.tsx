@@ -13,8 +13,14 @@ const BottomRackClothing = () => {
           </Heading>
         </VStack>
       </Box>
-      <Box>
-        <iframe src="https://www.loom.com/embed/10ee493c1fdb44b68b2a7ba9c12400f1?sid=3d14baad-6654-40a2-b842-790fbcc05e3f" />
+
+      <Box mt="80px" display="flex" justifyContent="center" alignItems="center">
+        <iframe
+          src="https://www.loom.com/embed/10ee493c1fdb44b68b2a7ba9c12400f1?sid=3d14baad-6654-40a2-b842-790fbcc05e3f"
+          width="560px"
+          height="315px"
+          allowFullScreen
+        />
       </Box>
     </>
   );
