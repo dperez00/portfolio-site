@@ -76,6 +76,27 @@ const BottomRackClothing = () => {
           </Text>
         </VStack>
       </Box>
+
+      <Heading
+        as="h4"
+        fontSize="25px"
+        mt="80px"
+        fontWeight="bold"
+        textAlign="center"
+        color="green.300"
+      >
+        My Projects
+      </Heading>
+      <Heading
+        as="h3"
+        fontSize="40px"
+        mt="10px"
+        mb="20px"
+        fontWeight="bold"
+        textAlign="center"
+      >
+        Recent Work
+      </Heading>
     </>
   );
 };
