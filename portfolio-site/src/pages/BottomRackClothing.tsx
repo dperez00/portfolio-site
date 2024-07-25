@@ -1,4 +1,24 @@
 import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import { SimpleGrid } from "@chakra-ui/react";
+import ProjectCard from "../components/ProjectCard";
+
+const projects = [
+  {
+    title: "Cosmos Forge",
+    description: "Web Design & Development",
+    imageUrl: "../assets/cosmosforge.png",
+  },
+  {
+    title: "Cosmos Forge Affiliate",
+    description: "Theme Customization",
+    imageUrl: "../assets/cosmosforgeaffiliate.png",
+  },
+  {
+    title: "Beaningful Coffee",
+    description: "Web Design & Development",
+    imageUrl: "../assets/beaningfulcoffee.png",
+  },
+];
 
 const BottomRackClothing = () => {
   return (
@@ -97,6 +117,17 @@ const BottomRackClothing = () => {
       >
         Recent Work
       </Heading>
+
+      <SimpleGrid columns={3} spacing={10}>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            imageUrl={project.imageUrl}
+          />
+        ))}
+      </SimpleGrid>
     </>
   );
 };
