@@ -1,26 +1,60 @@
-import { Box, Heading, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Card,
+  CardBody,
+  Heading,
+  Text,
+  VStack,
+  Image,
+  HStack,
+  Button,
+} from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import ProjectCard from "../components/ProjectCard";
+import { useNavigate } from "react-router-dom";
 
-const projects = [
+// Imported from Projects.tsx. Refactor this later on.
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
+
+// images
+const CosmosForge = new URL("../assets/cosmosforge.png", import.meta.url);
+const CosmosForgeAffiliate = new URL(
+  "../assets/cosmosforgeaffiliate.png",
+  import.meta.url
+);
+const BeaningfulCoffee = new URL(
+  "../assets/beaningfulcoffee.png",
+  import.meta.url
+);
+
+const projects: Project[] = [
   {
     title: "Cosmos Forge",
     description: "Web Design & Development",
-    imageUrl: "../assets/cosmosforge.png",
+    image: CosmosForge.toString(),
+    link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
-    imageUrl: "../assets/cosmosforgeaffiliate.png",
+    image: CosmosForgeAffiliate.toString(),
+    link: "/CosmosForgeAffiliate",
   },
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    imageUrl: "../assets/beaningfulcoffee.png",
+    image: BeaningfulCoffee.toString(),
+    link: "/BeaningfulCoffee",
   },
 ];
 
 const BottomRackClothing = () => {
+  const navigate = useNavigate();
   return (
     <>
       <Box bgGradient="linear(to-l, #7928CA, green.300)">
@@ -118,16 +152,45 @@ const BottomRackClothing = () => {
         Recent Work
       </Heading>
 
-      <SimpleGrid columns={3} spacing={10}>
+      {/* <SimpleGrid columns={3} spacing={10}>
         {projects.map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}
             description={project.description}
-            imageUrl={project.imageUrl}
+            imageUrl={project.image}
           />
         ))}
-      </SimpleGrid>
+      </SimpleGrid> */}
+
+      <HStack justifyContent="center" mb="250px">
+        {projects.map((project, index) => (
+          <Card borderRadius="6px" key={index}>
+            <CardBody>
+              <Image
+                src={project.image}
+                alt={project.title}
+                boxSize="300px"
+                objectFit="fill"
+                mb={5}
+              />
+              <Heading as="h3" fontSize="24px">
+                {project.title}
+              </Heading>
+              <Text>{project.description}</Text>
+            </CardBody>
+            <Button
+              m={4}
+              borderRadius="6px"
+              width="60%"
+              bgGradient="linear(to-l, #7928CA, green.300)"
+              onClick={() => navigate(project.link)}
+            >
+              View Project
+            </Button>
+          </Card>
+        ))}
+      </HStack>
     </>
   );
 };

@@ -57,7 +57,6 @@ const projects: Project[] = [
 
 const Projects = () => {
   const navigate = useNavigate();
-
   return (
     <>
       <HStack justifyContent="center">
