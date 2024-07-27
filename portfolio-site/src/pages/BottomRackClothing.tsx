@@ -1,16 +1,14 @@
 import {
   Box,
+  Button,
   Card,
   CardBody,
   Heading,
+  HStack,
+  Image,
   Text,
   VStack,
-  Image,
-  HStack,
-  Button,
 } from "@chakra-ui/react";
-import { SimpleGrid } from "@chakra-ui/react";
-import ProjectCard from "../components/ProjectCard";
 import { useNavigate } from "react-router-dom";
 
 // Imported from Projects.tsx. Refactor this later on.
@@ -151,17 +149,6 @@ const BottomRackClothing = () => {
       >
         Recent Work
       </Heading>
-
-      {/* <SimpleGrid columns={3} spacing={10}>
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            title={project.title}
-            description={project.description}
-            imageUrl={project.image}
-          />
-        ))}
-      </SimpleGrid> */}
 
       <HStack justifyContent="center" mb="250px">
         {projects.map((project, index) => (
