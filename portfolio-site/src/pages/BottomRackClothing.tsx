@@ -20,12 +20,15 @@ interface Project {
 }
 
 // images
-const CosmosForge = new URL("../assets/cosmosforge.png", import.meta.url);
-const CosmosForgeAffiliate = new URL(
+const CosmosForgePicture = new URL(
+  "../assets/cosmosforge.png",
+  import.meta.url
+);
+const CosmosForgeAffiliatePicture = new URL(
   "../assets/cosmosforgeaffiliate.png",
   import.meta.url
 );
-const BeaningfulCoffee = new URL(
+const BeaningfulCoffeePicture = new URL(
   "../assets/beaningfulcoffee.png",
   import.meta.url
 );
@@ -34,19 +37,19 @@ const projects: Project[] = [
   {
     title: "Cosmos Forge",
     description: "Web Design & Development",
-    image: CosmosForge.toString(),
+    image: CosmosForgePicture.toString(),
     link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
-    image: CosmosForgeAffiliate.toString(),
+    image: CosmosForgeAffiliatePicture.toString(),
     link: "/CosmosForgeAffiliate",
   },
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    image: BeaningfulCoffee.toString(),
+    image: BeaningfulCoffeePicture.toString(),
     link: "/BeaningfulCoffee",
   },
 ];
