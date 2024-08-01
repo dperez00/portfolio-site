@@ -61,17 +61,17 @@ const CosmosForgeAffiliate = () => {
       <Box bgGradient="linear(to-l, #7928CA, green.300)">
         <VStack justifyContent="center">
           <Heading as="h1" size="4xl">
-            Bottom Rack Clothing
+            Cosmos Forge Affiliate
           </Heading>
           <Heading as="h3" size="lg">
-            Web Design & Development
+            Theme Customization
           </Heading>
         </VStack>
       </Box>
 
       <Box mt="80px" display="flex" justifyContent="center" alignItems="center">
         <iframe
-          src="https://www.loom.com/embed/10ee493c1fdb44b68b2a7ba9c12400f1?sid=3d14baad-6654-40a2-b842-790fbcc05e3f"
+          src="https://www.loom.com/embed/01cb2500e0ef4ab8a622d44869302b34?sid=ae1c595a-f483-44fd-88c9-abdeed09b9f1"
           width="900px"
           height="600px"
           allowFullScreen
@@ -81,53 +81,28 @@ const CosmosForgeAffiliate = () => {
       <Box display="flex" justifyContent="center" alignItems="center">
         <VStack align="start" maxWidth="800px">
           <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
-            Who
-          </Text>
-          <Text as="p" fontSize="18px">
-            Bottom Rack Clothing is a clothing/accessories brand. It holds a
-            large collection of clothes and accessories with a wide range of
-            variants.
-          </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
             The Challenge
           </Text>
           <Text as="p" fontSize="18px">
-            Scaling a clothing brand with a large inventory of clothes and
-            accessories can be very difficult with a brand of this size. With
-            such a large inventory, it is important to stay organized. Staying
-            organized is crucial when it comes to any business and future
-            scaling.
-            <br />
-            <br />
-            With large inventories, you want fast and easy to find search
-            options for the best customer experience. When customers can't find
-            what they are looking for, you run the risk of losing potential
-            customers and growth.
+            Cosmos Forge is doing affiliate marketing with a brand selling LED
+            light strips. However, the default Shopify theme does not allow for
+            an affiliate product page without the store selling the product
+            themselves.
           </Text>
           <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
             The Solution
           </Text>
           <Text as="p" fontSize="18px">
-            Using a dynamic premium theme, I was able to implement a filter and
-            search feature, making it easier for customers to find what they
-            want quickly. Not only does this help with a stress-free shopping
-            experience, but it also helps with conversions.
-            <br />
-            <br />I also implemented a "Shop the look" feature. This benefits
-            the business by quickly advertising possible combined products. It
-            shows a selection of a few items that are often bought together and
-            allows for quick navigation to the product. the image depicts these
-            products as separate parts of one "look". This feature encourages
-            the customer to purchase multiple products at once.
+            Using Shopify Liquid and custom front-end coding, I was able to
+            create a product page for their affiliate products.
           </Text>
           <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
             The Result
           </Text>
           <Text as="p" fontSize="18px">
-            With limitless customization possibilities, Bottom Rack Clothing has
-            been built with the ability to scale in the long-term and help
-            streamline many difficult tasks. I built this website with emphasis
-            on customer visual experience and ease of use
+            Customers can now shop Cosmos Forge's own products and affiliate
+            products. Cosmos Forge can now increase their revenue by cross
+            marketing affiliate products.
           </Text>
         </VStack>
       </Box>
