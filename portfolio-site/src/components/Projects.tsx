@@ -27,6 +27,8 @@ const BeaningfulCoffee = new URL(
   "../assets/beaningfulcoffee.png",
   import.meta.url
 );
+const Magtech = new URL("../assets/magtech.png", import.meta.url);
+const GameHub = new URL("../assets/gamehub.png", import.meta.url);
 
 const projects: Project[] = [
   {
@@ -52,6 +54,18 @@ const projects: Project[] = [
     description: "Web Design & Development",
     image: BeaningfulCoffee.toString(),
     link: "/BeaningfulCoffee",
+  },
+  {
+    title: "Magtech Development",
+    description: "Web Design & Development",
+    image: Magtech.toString(),
+    link: "/Magtech",
+  },
+  {
+    title: "GameHub",
+    description: "Web Design & Development",
+    image: GameHub.toString(),
+    link: "/GameHub",
   },
 ];
 

@@ -22,6 +22,8 @@ const AppRouter = () => {
           element={<CosmosForgeAffiliate />}
         />
         <Route path="/BeaningfulCoffee" element={<BeaningfulCoffee />} />
+        <Route path="/Magtech" element={<BeaningfulCoffee />} />
+        <Route path="/GameHub" element={<BeaningfulCoffee />} />
         {/* add more routes for other projects if neccessary */}
       </Routes>
     </>
