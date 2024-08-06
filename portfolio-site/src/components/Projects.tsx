@@ -5,6 +5,7 @@ import {
   HStack,
   Heading,
   Image,
+  SimpleGrid,
   Text,
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
@@ -81,14 +82,20 @@ const Projects = () => {
           Projects
         </Heading>
       </HStack>
-      <HStack justifyContent="center" mb="250px">
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={2} p={10}>
         {projects.map((project, index) => (
-          <Card borderRadius="6px" key={index}>
-            <CardBody>
+          <Card borderRadius="6px" key={index} m={4}>
+            <CardBody
+              display="flex"
+              flexDirection="column"
+              justifyContent="center"
+              alignItems="center"
+              p={5}
+            >
               <Image
                 src={project.image}
                 alt={project.title}
-                boxSize="300px"
+                boxSize="350px"
                 objectFit="fill"
                 mb={5}
               />
@@ -98,6 +105,7 @@ const Projects = () => {
               <Text>{project.description}</Text>
             </CardBody>
             <Button
+              alignSelf="center"
               m={4}
               borderRadius="6px"
               width="60%"
@@ -108,7 +116,7 @@ const Projects = () => {
             </Button>
           </Card>
         ))}
-      </HStack>
+      </SimpleGrid>
     </>
   );
 };
