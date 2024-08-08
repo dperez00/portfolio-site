@@ -95,7 +95,8 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                boxSize="350px"
+                width="400px"
+                height="300px"
                 objectFit="fill"
                 mb={5}
               />
