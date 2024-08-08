@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardBody,
@@ -84,38 +85,46 @@ const Projects = () => {
       </HStack>
       <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={2} p={10}>
         {projects.map((project, index) => (
-          <Card borderRadius="6px" key={index} m={4}>
-            <CardBody
-              display="flex"
-              flexDirection="column"
-              justifyContent="center"
-              alignItems="center"
-              p={5}
-            >
-              <Image
-                src={project.image}
-                alt={project.title}
-                width="400px"
-                height="300px"
-                objectFit="fill"
-                mb={5}
-              />
-              <Heading as="h3" fontSize="24px">
-                {project.title}
-              </Heading>
-              <Text>{project.description}</Text>
-            </CardBody>
-            <Button
-              alignSelf="center"
-              m={4}
-              borderRadius="6px"
-              width="60%"
-              bgGradient="linear(to-l, #7928CA, green.300)"
-              onClick={() => navigate(project.link)}
-            >
-              View Project
-            </Button>
-          </Card>
+          <Box
+            borderRadius="6px"
+            key={index}
+            m={4}
+            overflow="hidden"
+            _hover={{ transform: "scale(1.05)", transition: "transform 0.3s" }}
+          >
+            <Card>
+              <CardBody
+                display="flex"
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+                p={5}
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width="400px"
+                  height="300px"
+                  objectFit="fill"
+                  mb={5}
+                />
+                <Heading as="h3" fontSize="24px">
+                  {project.title}
+                </Heading>
+                <Text>{project.description}</Text>
+              </CardBody>
+              <Button
+                alignSelf="center"
+                m={4}
+                borderRadius="6px"
+                width="60%"
+                bgGradient="linear(to-l, #7928CA, green.300)"
+                onClick={() => navigate(project.link)}
+              >
+                View Project
+              </Button>
+            </Card>
+          </Box>
         ))}
       </SimpleGrid>
     </>
