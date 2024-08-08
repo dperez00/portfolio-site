@@ -1,7 +1,8 @@
 import { Box, HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/Logo Transparent.png";
 import ColorModeSwitch from "./ColorModeSwitch";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import { Link, Link as RouterLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -9,54 +10,49 @@ const NavBar = () => {
       <Image src={logo} boxSize="70px" />
       <HStack spacing="20px">
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-          <Link
-            to="home"
-            smooth={true}
-            duration={500}
-            style={{ fontSize: "24px" }}
-          >
+          <RouterLink to="/" style={{ fontSize: "24px" }}>
             Home
-          </Link>
+          </RouterLink>
         </Box>
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-          <Link
+          <ScrollLink
             to="about"
             smooth={true}
             duration={500}
             style={{ fontSize: "24px" }}
           >
             About
-          </Link>
+          </ScrollLink>
         </Box>
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-          <Link
+          <ScrollLink
             to="experience"
             smooth={true}
             duration={500}
             style={{ fontSize: "24px" }}
           >
             Experience
-          </Link>
+          </ScrollLink>
         </Box>
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-          <Link
+          <ScrollLink
             to="projects"
             smooth={true}
             duration={500}
             style={{ fontSize: "24px" }}
           >
             Projects
-          </Link>
+          </ScrollLink>
         </Box>
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-          <Link
+          <ScrollLink
             to="contact"
             smooth={true}
             duration={500}
             style={{ fontSize: "24px" }}
           >
             Contact
-          </Link>
+          </ScrollLink>
         </Box>
       </HStack>
       <HStack>
