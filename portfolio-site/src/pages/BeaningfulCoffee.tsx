@@ -20,37 +20,31 @@ interface Project {
 }
 
 // images
-const CosmosForgePicture = new URL(
-  "../assets/cosmosforge.png",
-  import.meta.url
-);
-const CosmosForgeAffiliatePicture = new URL(
-  "../assets/cosmosforgeaffiliate.png",
-  import.meta.url
-);
-const BeaningfulCoffeePicture = new URL(
-  "../assets/beaningfulcoffee.png",
+const Magtech = new URL("../assets/magtech.png", import.meta.url);
+const GameHub = new URL("../assets/cosmosforgeaffiliate.png", import.meta.url);
+const BottomRackClothing = new URL(
+  "../assets/bottomrackclothing.png",
   import.meta.url
 );
 
 const projects: Project[] = [
   {
-    title: "Cosmos Forge",
+    title: "Magtech",
     description: "Web Design & Development",
-    image: CosmosForgePicture.toString(),
-    link: "/CosmosForge",
+    image: Magtech.toString(),
+    link: "/Magtech",
   },
   {
-    title: "Cosmos Forge Affiliate",
-    description: "Theme Customization",
-    image: CosmosForgeAffiliatePicture.toString(),
-    link: "/CosmosForgeAffiliate",
+    title: "GameHub",
+    description: "Web Design & Development",
+    image: GameHub.toString(),
+    link: "/GameHub",
   },
   {
-    title: "Beaningful Coffee",
+    title: "Bottom Rack Clothing",
     description: "Web Design & Development",
-    image: BeaningfulCoffeePicture.toString(),
-    link: "/BeaningfulCoffee",
+    image: BottomRackClothing.toString(),
+    link: "/BottomRackClothing",
   },
 ];
 
