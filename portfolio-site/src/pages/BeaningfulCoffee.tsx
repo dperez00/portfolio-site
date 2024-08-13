@@ -20,8 +20,11 @@ interface Project {
 }
 
 // images
-const Magtech = new URL("../assets/magtech.png", import.meta.url);
-const GameHub = new URL("../assets/cosmosforgeaffiliate.png", import.meta.url);
+const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
+const GameHubImage = new URL(
+  "../assets/cosmosforgeaffiliate.png",
+  import.meta.url
+);
 const BottomRackClothing = new URL(
   "../assets/bottomrackclothing.png",
   import.meta.url
@@ -31,13 +34,13 @@ const projects: Project[] = [
   {
     title: "Magtech",
     description: "Web Design & Development",
-    image: Magtech.toString(),
+    image: MagtechImage.toString(),
     link: "/Magtech",
   },
   {
     title: "GameHub",
     description: "Web Design & Development",
-    image: GameHub.toString(),
+    image: GameHubImage.toString(),
     link: "/GameHub",
   },
   {
