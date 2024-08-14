@@ -85,7 +85,7 @@ const Magtech = () => {
           </Text>
           <Text as="p" fontSize="18px">
             <Link href="https://magtech.dev/" isExternal color="#67d391">
-              Magteach Development
+              Magtech Development
             </Link>{" "}
             is my first portfolio I created using Webflow and custom code.
           </Text>
