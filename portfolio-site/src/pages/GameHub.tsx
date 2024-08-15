@@ -49,7 +49,7 @@ const projects: Project[] = [
   },
   {
     title: "Cosmos Forge Affiliate",
-    description: "Web Design & Development",
+    description: "Theme Customization",
     image: CosmosForgeAffiliatePicture.toString(),
     link: "/CosmosForgeAffiliate",
   },
@@ -65,7 +65,7 @@ const GameHub = () => {
             GameHub
           </Heading>
           <Heading as="h3" size="lg">
-            Branding & Web Design
+            Web Design & Development
           </Heading>
         </VStack>
       </Box>
@@ -127,7 +127,8 @@ const GameHub = () => {
             aesthetically pleasing and responsive. React Query was integrated to
             cache data, enhancing the site's performance. Zustand was used for
             state management, and React Router facilitated seamless navigation
-            throughout the site.
+            throughout the site. For a more in-depth look at my project, click
+            the "GameHub" link above.
           </Text>
         </VStack>
       </Box>
