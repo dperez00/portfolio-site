@@ -62,7 +62,7 @@ const Magtech = () => {
             Magtech Development
           </Heading>
           <Heading as="h3" size="lg">
-            Branding & Web Design
+            Web Design & Development
           </Heading>
         </VStack>
       </Box>
@@ -93,10 +93,10 @@ const Magtech = () => {
             The Challenge
           </Text>
           <Text as="p" fontSize="18px">
-            The challenge was to create a portfolio using the skills I have
+            The challenge was to create a portfolio showcasing the skills I have
             learned while also learning how to use a site like Webflow. Another
-            challenge was to make the site look professional and easy to
-            navigate.
+            challenge was to make the site look professional and user-friendly
+            in navigate.
           </Text>
           <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
             The Solution
