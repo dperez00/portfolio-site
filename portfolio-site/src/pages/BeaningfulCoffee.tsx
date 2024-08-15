@@ -21,10 +21,7 @@ interface Project {
 
 // images
 const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
-const GameHubImage = new URL(
-  "../assets/cosmosforgeaffiliate.png",
-  import.meta.url
-);
+const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
 const BottomRackClothing = new URL(
   "../assets/bottomrackclothing.png",
   import.meta.url
@@ -61,7 +58,7 @@ const BeaningfulCoffee = () => {
             Beaningful Coffee
           </Heading>
           <Heading as="h3" size="lg">
-            Branding & Web Design
+            Web Design & Development
           </Heading>
         </VStack>
       </Box>
