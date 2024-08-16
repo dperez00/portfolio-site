@@ -2,7 +2,7 @@ import { Box, HStack, Image } from "@chakra-ui/react";
 import logo from "../assets/Logo Transparent.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import { Link as ScrollLink } from "react-scroll";
-import { Link, Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -17,8 +17,8 @@ const NavBar = () => {
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <ScrollLink
             to="about"
-            smooth={true}
-            duration={500}
+            smooth="easeInOutQuart"
+            duration={900}
             style={{ fontSize: "24px" }}
           >
             About
@@ -27,8 +27,8 @@ const NavBar = () => {
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <ScrollLink
             to="experience"
-            smooth={true}
-            duration={500}
+            smooth="easeInOutQuart"
+            duration={900}
             style={{ fontSize: "24px" }}
           >
             Experience
@@ -37,8 +37,8 @@ const NavBar = () => {
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <ScrollLink
             to="projects"
-            smooth={true}
-            duration={500}
+            smooth="easeInOutQuart"
+            duration={900}
             style={{ fontSize: "24px" }}
           >
             Projects
@@ -47,8 +47,8 @@ const NavBar = () => {
         <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
           <ScrollLink
             to="contact"
-            smooth={true}
-            duration={500}
+            smooth="easeInOutQuart"
+            duration={900}
             style={{ fontSize: "24px" }}
           >
             Contact
