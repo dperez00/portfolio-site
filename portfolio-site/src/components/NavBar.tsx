@@ -55,9 +55,6 @@ const NavBar = () => {
           </ScrollLink>
         </Box>
       </HStack>
-      <HStack>
-        <ColorModeSwitch />
-      </HStack>
     </HStack>
   );
 };
