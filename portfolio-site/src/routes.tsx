@@ -7,6 +7,7 @@ import CosmosForgeAffiliate from "./pages/CosmosForgeAffiliate";
 import BeaningfulCoffee from "./pages/BeaningfulCoffee";
 import Magtech from "./pages/Magtech";
 import GameHub from "./pages/GameHub";
+import ScrollToTop from "./components/ScrollToTop";
 
 /* We switched from using "Router" in this component to using "Switch" and "Route".
 We did this because we can't use "Router" in this component and in our Main.tsx file.
@@ -14,6 +15,7 @@ We did this because we can't use "Router" in this component and in our Main.tsx 
 const AppRouter = () => {
   return (
     <>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
