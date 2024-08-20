@@ -1,8 +1,7 @@
 import { Box, HStack, Image } from "@chakra-ui/react";
-import logo from "../assets/Logo Transparent.png";
-import ColorModeSwitch from "./ColorModeSwitch";
-import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import logo from "../assets/Logo Transparent.png";
 
 const NavBar = () => {
   return (
