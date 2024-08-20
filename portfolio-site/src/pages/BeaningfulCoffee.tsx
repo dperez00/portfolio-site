@@ -29,7 +29,7 @@ const BottomRackClothing = new URL(
 
 const projects: Project[] = [
   {
-    title: "Magtech",
+    title: "Magtech Development",
     description: "Web Design & Development",
     image: MagtechImage.toString(),
     link: "/Magtech",
