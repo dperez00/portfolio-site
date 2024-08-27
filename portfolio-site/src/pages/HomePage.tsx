@@ -11,9 +11,12 @@ const HomePage = () => {
   return (
     <Grid
       templateAreas={{
-        base: `"nav" "main"`,
-        lg: `"nav nav" "main main"`, // lg is wider than 1024px
+        base: `"main"`,
+        md: `"main"`,
+        lg: `"main"`, // lg is wider than 1024px
       }}
+      gap={4}
+      p={4}
     >
       <GridItem area="main">
         <Banner />
