@@ -1,4 +1,4 @@
-import { HStack, VStack, Show, useBreakpointValue } from "@chakra-ui/react";
+import { Box, HStack, VStack, useBreakpointValue } from "@chakra-ui/react";
 import HeroSection from "./HeroSection";
 import HeroSectionText from "./HeroSectionText";
 
@@ -10,21 +10,27 @@ const Banner = () => {
       {isLargeScreen ? (
         <HStack
           justifyContent="center"
-          spacing={{ base: "20px", md: "50px", lg: "115px" }}
+          spacing={{ base: "20px", md: "30px", lg: "50px" }}
           mt={{ base: "20px", md: "30px", lg: "50px" }}
         >
-          <HeroSectionText />
-          <Show above="lg">
+          <Box>
+            <HeroSectionText />
+          </Box>
+          <Box>
             <HeroSection />
-          </Show>
+          </Box>
         </HStack>
       ) : (
         <VStack
           spacing={{ base: "20px", md: "30px" }}
           mt={{ base: "20px", md: "30px" }}
         >
-          <HeroSectionText />
-          <HeroSection />
+          <Box>
+            <HeroSection />
+          </Box>
+          <Box>
+            <HeroSectionText />
+          </Box>
         </VStack>
       )}
     </>
