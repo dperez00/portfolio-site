@@ -76,14 +76,23 @@ const Projects = () => {
   return (
     <>
       <HStack justifyContent="center">
-        <Text fontSize="18px">Explore My Recent</Text>
+        <Text fontSize={{ base: "16px", md: "18px" }}>Explore My Recent</Text>
       </HStack>
       <HStack justifyContent="center">
-        <Heading as="h2" fontSize="48px" color="#67d391" mb="32px">
+        <Heading
+          as="h2"
+          fontSize={{ base: "32px", md: "48px" }}
+          color="#67d391"
+          mb="32px"
+        >
           Projects
         </Heading>
       </HStack>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={2} p={10}>
+      <SimpleGrid
+        columns={{ base: 1, md: 2, lg: 3 }}
+        spacing={5}
+        p={{ base: 5, md: 10 }}
+      >
         {projects.map((project, index) => (
           <Box
             borderRadius="6px"
@@ -103,21 +112,42 @@ const Projects = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width="400px"
-                  height="300px"
-                  objectFit="fill"
+                  width={{ base: "100%", md: "400px" }}
+                  height={{ base: "auto", md: "300px" }}
+                  objectFit="cover"
                   mb={5}
                 />
-                <Heading as="h3" fontSize="24px">
+                <Heading
+                  as="h3"
+                  fontSize={{
+                    base: "20px",
+                    sm: "22px",
+                    md: "24px",
+                    lg: "26px",
+                  }}
+                  textAlign="center"
+                  mb={{ base: 2, md: 4 }}
+                >
                   {project.title}
                 </Heading>
-                <Text>{project.description}</Text>
+                <Text
+                  fontSize={{
+                    base: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "18px",
+                  }}
+                  textAlign="center"
+                  mb={{ base: 4, md: 6 }}
+                >
+                  {project.description}
+                </Text>
               </CardBody>
               <Button
                 alignSelf="center"
                 m={4}
                 borderRadius="6px"
-                width="60%"
+                width={{ base: "80%", md: "60%" }}
                 bgGradient="linear(to-l, #7928CA, green.300)"
                 onClick={() => navigate(project.link)}
               >
