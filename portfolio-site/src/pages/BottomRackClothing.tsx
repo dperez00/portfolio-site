@@ -58,40 +58,52 @@ const BottomRackClothing = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Box bgGradient="linear(to-l, #7928CA, green.300)">
-        <VStack justifyContent="center">
-          <Heading as="h1" size="4xl">
+      <Box bgGradient="linear(to-l, #7928CA, green.300)" p={{ base: 4, md: 8 }}>
+        <VStack justifyContent="center" spacing={{ base: 4, md: 8 }}>
+          <Heading as="h1" size={{ base: "2xl", md: "4xl" }} textAlign="center">
             Bottom Rack Clothing
           </Heading>
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: "md", md: "lg" }} textAlign="center">
             Web Design & Development
           </Heading>
         </VStack>
       </Box>
 
-      <Box mt="80px" display="flex" justifyContent="center" alignItems="center">
+      <Box
+        mt={{ base: "40px", md: "80px" }}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={{ base: 4, md: 8 }}
+      >
         <iframe
           src="https://www.loom.com/embed/10ee493c1fdb44b68b2a7ba9c12400f1?sid=3d14baad-6654-40a2-b842-790fbcc05e3f"
-          width="900px"
-          height="600px"
+          width="100%"
+          height="auto"
+          style={{ maxWidth: "900px", minHeight: "400px" }}
           allowFullScreen
         />
       </Box>
 
-      <Box display="flex" justifyContent="center" alignItems="center">
-        <VStack align="start" maxWidth="800px">
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={{ base: 4, md: 8 }}
+      >
+        <VStack align="start" maxWidth="800px" spacing={{ base: 4, md: 8 }}>
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             Who
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             Bottom Rack Clothing is a clothing/accessories brand. It holds a
             large collection of clothes and accessories with a wide range of
             variants.
           </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Challenge
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             Scaling a clothing brand with a large inventory of clothes and
             accessories can be very difficult with a brand of this size. With
             such a large inventory, it is important to stay organized. Staying
@@ -104,10 +116,10 @@ const BottomRackClothing = () => {
             what they are looking for, you run the risk of losing potential
             customers and growth.
           </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Solution
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             Using a dynamic premium theme, I was able to implement a filter and
             search feature, making it easier for customers to find what they
             want quickly. Not only does this help with a stress-free shopping
@@ -120,22 +132,22 @@ const BottomRackClothing = () => {
             products as separate parts of one "look". This feature encourages
             the customer to purchase multiple products at once.
           </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Result
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             With limitless customization possibilities, Bottom Rack Clothing has
             been built with the ability to scale in the long-term and help
             streamline many difficult tasks. I built this website with emphasis
-            on customer visual experience and ease of use
+            on customer visual experience and ease of use.
           </Text>
         </VStack>
       </Box>
 
       <Heading
         as="h4"
-        fontSize="25px"
-        mt="80px"
+        fontSize={{ base: "xl", md: "2xl" }}
+        mt={{ base: "40px", md: "80px" }}
         fontWeight="bold"
         textAlign="center"
         color="green.300"
@@ -144,7 +156,7 @@ const BottomRackClothing = () => {
       </Heading>
       <Heading
         as="h3"
-        fontSize="40px"
+        fontSize={{ base: "2xl", md: "4xl" }}
         mt="10px"
         mb="20px"
         fontWeight="bold"
