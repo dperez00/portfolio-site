@@ -5,9 +5,16 @@ const BottomLinks = () => {
   return (
     <>
       <HStack justifyContent="center">
-        <List display="flex" flexDirection="row">
-          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-            <ListItem mr={10}>
+        <List
+          display="flex"
+          flexDirection={{ base: "column", md: "row" }}
+          alignItems="center"
+        >
+          <Box
+            _hover={{ cursor: "pointer", color: "#67d391" }}
+            mb={{ base: 4, md: 0 }}
+          >
+            <ListItem mr={{ base: 0, md: 10 }}>
               <Link
                 to="about"
                 smooth={true}
@@ -18,8 +25,11 @@ const BottomLinks = () => {
               </Link>
             </ListItem>
           </Box>
-          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-            <ListItem mr={10}>
+          <Box
+            _hover={{ cursor: "pointer", color: "#67d391" }}
+            mb={{ base: 4, md: 0 }}
+          >
+            <ListItem mr={{ base: 0, md: 10 }}>
               <Link
                 to="experience"
                 smooth={true}
@@ -30,8 +40,11 @@ const BottomLinks = () => {
               </Link>
             </ListItem>
           </Box>
-          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-            <ListItem mr={10} fontSize="20px">
+          <Box
+            _hover={{ cursor: "pointer", color: "#67d391" }}
+            mb={{ base: 4, md: 0 }}
+          >
+            <ListItem mr={{ base: 0, md: 10 }}>
               <Link
                 to="projects"
                 smooth={true}
@@ -57,7 +70,12 @@ const BottomLinks = () => {
         </List>
       </HStack>
       <HStack justifyContent="center">
-        <Text fontSize="16px" mt={10} mb={8}>
+        <Text
+          fontSize={{ base: "12px", md: "16px" }}
+          mt={10}
+          mb={8}
+          textAlign="center"
+        >
           Copyright © 2024 David Perez. All Rights Reserved
         </Text>
       </HStack>
