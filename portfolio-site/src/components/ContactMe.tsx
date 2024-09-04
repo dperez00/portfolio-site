@@ -6,35 +6,51 @@ const ContactMe = () => {
   return (
     <>
       <HStack justifyContent="center">
-        <Text fontSize="18px">Get In Touch</Text>
+        <Text fontSize={{ base: "16px", md: "18px" }}>Get In Touch</Text>
       </HStack>
       <HStack justifyContent="center">
-        <Heading as="h2" fontSize="48px" color="#67d391" mb="32px">
+        <Heading
+          as="h2"
+          fontSize={{ base: "32px", md: "48px" }}
+          color="#67d391"
+          mb={{ base: "16px", md: "32px" }}
+        >
           Contact Me
         </Heading>
       </HStack>
-      <HStack justifyContent="center" mb="150px">
-        <Box border="2px" borderColor="#7928CA" borderRadius="32px">
-          <HStack gap="16px" margin="16px">
+      <HStack justifyContent="center" mb={{ base: "50px", md: "150px" }}>
+        <Box
+          border="2px"
+          borderColor="#7928CA"
+          borderRadius="32px"
+          p={{ base: "8px", md: "16px" }}
+        >
+          <HStack
+            gap={{ base: "8px", md: "16px" }}
+            margin={{ base: "8px", md: "16px" }}
+            wrap="wrap"
+          >
             <HStack>
               <Box
                 borderRadius="full"
                 bgGradient="linear(to-l, #7928CA, green.300)"
-                p={1}
+                p={{ base: "4px", md: "8px" }}
               >
                 <MdOutlineMailOutline />
               </Box>
-              <Text fontSize="large">perez.david3001@gmail.com</Text>
+              <Text fontSize={{ base: "14px", md: "large" }}>
+                perez.david3001@gmail.com
+              </Text>
             </HStack>
             <HStack>
               <Box
                 borderRadius="full"
                 bgGradient="linear(to-l, #7928CA, green.300)"
-                p={1}
+                p={{ base: "4px", md: "8px" }}
               >
                 <FaLinkedin />
               </Box>
-              <Text fontSize="large">LinkedIn</Text>
+              <Text fontSize={{ base: "14px", md: "large" }}>LinkedIn</Text>
             </HStack>
           </HStack>
         </Box>
