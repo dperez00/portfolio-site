@@ -52,48 +52,60 @@ const CosmosForgeAffiliate = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Box bgGradient="linear(to-l, #7928CA, green.300)">
-        <VStack justifyContent="center">
-          <Heading as="h1" size="4xl">
+      <Box bgGradient="linear(to-l, #7928CA, green.300)" p={{ base: 4, md: 8 }}>
+        <VStack justifyContent="center" spacing={{ base: 4, md: 8 }}>
+          <Heading as="h1" size={{ base: "2xl", md: "4xl" }} textAlign="center">
             Cosmos Forge Affiliate
           </Heading>
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: "md", md: "lg" }} textAlign="center">
             Theme Customization
           </Heading>
         </VStack>
       </Box>
 
-      <Box mt="80px" display="flex" justifyContent="center" alignItems="center">
+      <Box
+        mt={{ base: "40px", md: "80px" }}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={{ base: 4, md: 8 }}
+      >
         <iframe
           src="https://www.loom.com/embed/01cb2500e0ef4ab8a622d44869302b34?sid=ae1c595a-f483-44fd-88c9-abdeed09b9f1"
-          width="900px"
-          height="600px"
+          width="100%"
+          height="auto"
+          style={{ maxWidth: "900px", minHeight: "400px" }}
           allowFullScreen
         />
       </Box>
 
-      <Box display="flex" justifyContent="center" alignItems="center">
-        <VStack align="start" maxWidth="800px">
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={{ base: 4, md: 8 }}
+      >
+        <VStack align="start" maxWidth="800px" spacing={{ base: 4, md: 8 }}>
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Challenge
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             Cosmos Forge is doing affiliate marketing with a brand selling LED
             light strips. However, the default Shopify theme does not allow for
             an affiliate product page without the store selling the product
             themselves.
           </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Solution
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             Using Shopify Liquid and custom front-end coding, I was able to
             create a product page for their affiliate products.
           </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Result
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             Customers can now shop Cosmos Forge's own products and affiliate
             products. Cosmos Forge can now increase their revenue by cross
             marketing affiliate products.
@@ -103,8 +115,8 @@ const CosmosForgeAffiliate = () => {
 
       <Heading
         as="h4"
-        fontSize="25px"
-        mt="80px"
+        fontSize={{ base: "xl", md: "2xl" }}
+        mt={{ base: "40px", md: "80px" }}
         fontWeight="bold"
         textAlign="center"
         color="green.300"
@@ -113,7 +125,7 @@ const CosmosForgeAffiliate = () => {
       </Heading>
       <Heading
         as="h3"
-        fontSize="40px"
+        fontSize={{ base: "2xl", md: "4xl" }}
         mt="10px"
         mb="20px"
         fontWeight="bold"
