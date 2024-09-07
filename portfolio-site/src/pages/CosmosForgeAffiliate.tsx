@@ -159,10 +159,19 @@ const CosmosForgeAffiliate = () => {
                   objectFit="fill"
                   mb={5}
                 />
-                <Heading as="h3" fontSize="24px">
+                <Heading
+                  as="h3"
+                  fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
+                  textAlign="center"
+                >
                   {project.title}
                 </Heading>
-                <Text>{project.description}</Text>
+                <Text
+                  fontSize={{ base: "sm", md: "md", lg: "lg" }}
+                  textAlign="center"
+                >
+                  {project.description}
+                </Text>
               </CardBody>
               <Button
                 alignSelf="center"
