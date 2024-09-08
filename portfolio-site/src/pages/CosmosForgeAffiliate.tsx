@@ -154,14 +154,14 @@ const CosmosForgeAffiliate = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width="400px"
-                  height="300px"
+                  width={{ base: "100%", md: "300px", lg: "400px" }}
+                  height={{ base: "auto", md: "200px", lg: "250px" }}
                   objectFit="fill"
                   mb={5}
                 />
                 <Heading
                   as="h3"
-                  fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
+                  fontSize={{ base: "lg", md: "xl", lg: "xl" }}
                   textAlign="center"
                 >
                   {project.title}
