@@ -185,15 +185,24 @@ const BottomRackClothing = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width="400px"
-                  height="300px"
+                  width={{ base: "100%", md: "300px", lg: "400px" }}
+                  height={{ base: "auto", md: "200px", lg: "250px" }}
                   objectFit="fill"
                   mb={5}
                 />
-                <Heading as="h3" fontSize="24px">
+                <Heading
+                  as="h3"
+                  fontSize={{ base: "lg", md: "xl", lg: "xl" }}
+                  textAlign="center"
+                >
                   {project.title}
                 </Heading>
-                <Text>{project.description}</Text>
+                <Text
+                  fontSize={{ base: "sm", md: "md", lg: "lg" }}
+                  textAlign="center"
+                >
+                  {project.description}
+                </Text>
               </CardBody>
               <Button
                 alignSelf="center"

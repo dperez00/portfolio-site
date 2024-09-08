@@ -59,34 +59,46 @@ const GameHub = () => {
   const navigate = useNavigate();
   return (
     <>
-      <Box bgGradient="linear(to-l, #7928CA, green.300)">
-        <VStack justifyContent="center">
-          <Heading as="h1" size="4xl">
+      <Box bgGradient="linear(to-l, #7928CA, green.300)" p={{ base: 4, md: 8 }}>
+        <VStack justifyContent="center" spacing={{ base: 4, md: 8 }}>
+          <Heading as="h1" size={{ base: "2xl", md: "4xl" }} textAlign="center">
             GameHub
           </Heading>
-          <Heading as="h3" size="lg">
+          <Heading as="h3" size={{ base: "md", md: "lg" }} textAlign="center">
             Web Design & Development
           </Heading>
         </VStack>
       </Box>
 
-      <Box mt="80px" display="flex" justifyContent="center" alignItems="center">
+      <Box
+        mt={{ base: "40px", md: "80px" }}
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={{ base: 4, md: 8 }}
+      >
         <Image
           src={GameHubImage.toString()}
           alt="Magtech Development"
-          height="600px"
-          width="900px"
+          width="100%"
+          height="auto"
+          style={{ maxWidth: "900px", minHeight: "400px" }}
           objectFit="fill"
           borderRadius="6px"
         />
       </Box>
 
-      <Box display="flex" justifyContent="center" alignItems="center">
-        <VStack align="start" maxWidth="800px">
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+      <Box
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        p={{ base: 4, md: 8 }}
+      >
+        <VStack align="start" maxWidth="800px" spacing={{ base: 4, md: 8 }}>
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             Who
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             Of all my projects, my{" "}
             <Link
               href="https://game-hub-1-five.vercel.app/"
@@ -108,18 +120,18 @@ const GameHub = () => {
             detailed game pages with images and trailers (when available), and
             displaying the platforms each game is available on.
           </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Solution
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             The solution involved leveraging technologies such as React,
             TypeScript, React Query, React Router, Chakra UI, and Zustand to
             develop a visually appealing and responsive website.
           </Text>
-          <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
+          <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Result
           </Text>
-          <Text as="p" fontSize="18px">
+          <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             The outcome was a visually appealing and responsive website that
             effectively demonstrated my proficiency in React and TypeScript.
             Utilizing the RAWG API, I retrieved and displayed game data on the
@@ -135,8 +147,8 @@ const GameHub = () => {
 
       <Heading
         as="h4"
-        fontSize="25px"
-        mt="80px"
+        fontSize={{ base: "xl", md: "2xl" }}
+        mt={{ base: "40px", md: "80px" }}
         fontWeight="bold"
         textAlign="center"
         color="green.300"
@@ -145,7 +157,7 @@ const GameHub = () => {
       </Heading>
       <Heading
         as="h3"
-        fontSize="40px"
+        fontSize={{ base: "2xl", md: "4xl" }}
         mt="10px"
         mb="20px"
         fontWeight="bold"
@@ -174,15 +186,24 @@ const GameHub = () => {
                 <Image
                   src={project.image}
                   alt={project.title}
-                  width="400px"
-                  height="300px"
+                  width={{ base: "100%", md: "300px", lg: "400px" }}
+                  height={{ base: "auto", md: "200px", lg: "250px" }}
                   objectFit="fill"
                   mb={5}
                 />
-                <Heading as="h3" fontSize="24px">
+                <Heading
+                  as="h3"
+                  fontSize={{ base: "lg", md: "xl", lg: "xl" }}
+                  textAlign="center"
+                >
                   {project.title}
                 </Heading>
-                <Text>{project.description}</Text>
+                <Text
+                  fontSize={{ base: "sm", md: "md", lg: "lg" }}
+                  textAlign="center"
+                >
+                  {project.description}
+                </Text>
               </CardBody>
               <Button
                 alignSelf="center"
