@@ -120,10 +120,10 @@ const Projects = () => {
                 <Heading
                   as="h3"
                   fontSize={{
-                    base: "20px",
-                    sm: "22px",
-                    md: "24px",
-                    lg: "26px",
+                    base: "18px",
+                    sm: "20px",
+                    md: "22px",
+                    lg: "24px",
                   }}
                   textAlign="center"
                   mb={{ base: 2, md: 4 }}
