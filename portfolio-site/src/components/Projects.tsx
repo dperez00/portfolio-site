@@ -101,22 +101,20 @@ const Projects = () => {
             overflow="hidden"
             _hover={{ transform: "scale(1.05)", transition: "transform 0.3s" }}
           >
-            <Card>
+            <Card borderRadius={10}>
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={{ base: "100%", md: "400px" }}
+                height={{ base: "auto", md: "300px" }}
+                objectFit="fill"
+              />
               <CardBody
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
-                p={5}
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={{ base: "100%", md: "400px" }}
-                  height={{ base: "auto", md: "300px" }}
-                  objectFit="cover"
-                  mb={5}
-                />
                 <Heading
                   as="h3"
                   fontSize={{
