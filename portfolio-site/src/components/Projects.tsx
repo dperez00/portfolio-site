@@ -136,7 +136,6 @@ const Projects = () => {
                     lg: "18px",
                   }}
                   textAlign="center"
-                  mb={{ base: 4, md: 6 }}
                 >
                   {project.description}
                 </Text>
@@ -145,7 +144,7 @@ const Projects = () => {
                 alignSelf="center"
                 m={4}
                 borderRadius="6px"
-                width={{ base: "80%", md: "60%" }}
+                width={{ base: "50%", md: "45%", lg: "45%" }}
                 bgGradient="linear(to-l, #7928CA, green.300)"
                 onClick={() => navigate(project.link)}
               >
