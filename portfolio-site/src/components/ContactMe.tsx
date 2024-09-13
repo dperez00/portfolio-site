@@ -1,6 +1,7 @@
 import { Box, HStack, Heading, Text } from "@chakra-ui/react";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ContactMe = () => {
   return (
@@ -43,13 +44,18 @@ const ContactMe = () => {
               </Text>
             </HStack>
             <HStack>
-              <Box
-                borderRadius="full"
-                bgGradient="linear(to-l, #7928CA, green.300)"
-                p={{ base: "4px", md: "8px" }}
+              <Link
+                to="https://www.linkedin.com/in/davidperez00/"
+                target="_blank"
               >
-                <FaLinkedin />
-              </Box>
+                <Box
+                  borderRadius="full"
+                  bgGradient="linear(to-l, #7928CA, green.300)"
+                  p={{ base: "4px", md: "8px" }}
+                >
+                  <FaLinkedin />
+                </Box>
+              </Link>
               <Text fontSize={{ base: "14px", md: "large" }}>LinkedIn</Text>
             </HStack>
           </HStack>
