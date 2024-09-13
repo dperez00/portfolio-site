@@ -151,40 +151,53 @@ const Magtech = () => {
         Recent Work
       </Heading>
 
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={2} p={10}>
+      <SimpleGrid
+        columns={{ base: 1, md: 2, lg: 3 }}
+        spacing={5}
+        p={{ base: 5, md: 10 }}
+      >
         {projects.map((project, index) => (
           <Box
             borderRadius="6px"
             key={index}
-            m={2}
+            m={4}
             overflow="hidden"
             _hover={{ transform: "scale(1.05)", transition: "transform 0.3s" }}
           >
-            <Card>
+            <Card borderRadius={10}>
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={{ base: "100%", md: "400px" }}
+                height={{ base: "auto", md: "300px" }}
+                objectFit="fill"
+              />
               <CardBody
                 display="flex"
                 flexDirection="column"
                 justifyContent="center"
                 alignItems="center"
-                p={5}
               >
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  width={{ base: "100%", md: "300px", lg: "400px" }}
-                  height={{ base: "auto", md: "200px", lg: "250px" }}
-                  objectFit="fill"
-                  mb={5}
-                />
                 <Heading
                   as="h3"
-                  fontSize={{ base: "lg", md: "xl", lg: "xl" }}
+                  fontSize={{
+                    base: "18px",
+                    sm: "20px",
+                    md: "22px",
+                    lg: "24px",
+                  }}
                   textAlign="center"
+                  mb={{ base: 2, md: 4 }}
                 >
                   {project.title}
                 </Heading>
                 <Text
-                  fontSize={{ base: "sm", md: "md", lg: "lg" }}
+                  fontSize={{
+                    base: "14px",
+                    sm: "15px",
+                    md: "16px",
+                    lg: "18px",
+                  }}
                   textAlign="center"
                 >
                   {project.description}
@@ -194,7 +207,7 @@ const Magtech = () => {
                 alignSelf="center"
                 m={4}
                 borderRadius="6px"
-                width="60%"
+                width={{ base: "50%", md: "45%", lg: "45%" }}
                 bgGradient="linear(to-l, #7928CA, green.300)"
                 onClick={() => navigate(project.link)}
               >
