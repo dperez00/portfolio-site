@@ -107,8 +107,7 @@ const Magtech = () => {
           <Text as="p" fontSize={{ base: "md", md: "lg" }}>
             The challenge was to create a portfolio showcasing the skills I have
             learned while also learning how to use a site like Webflow. Another
-            challenge was to make the site look professional and user-friendly
-            in navigate.
+            challenge was to make the site look professional and user-friendly.
           </Text>
           <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Solution
