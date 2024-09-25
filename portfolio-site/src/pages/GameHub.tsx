@@ -1,5 +1,5 @@
 import GameHubImage from "../assets/gamehub.png";
-import BottomRackImage from "../assets/bottomrackclothing.png";
+import BottomRackClothingImage from "../assets/bottomrackclothing.png";
 import CosmosForgeImage from "../assets/cosmosforge.png";
 import CosmosForgeAffiliateImage from "../assets/cosmosforgeaffiliate.png";
 import {
@@ -42,7 +42,7 @@ const projects: Project[] = [
   {
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
-    image: BottomRackImage,
+    image: BottomRackClothingImage,
     link: "/BottomRackClothing",
   },
   {
