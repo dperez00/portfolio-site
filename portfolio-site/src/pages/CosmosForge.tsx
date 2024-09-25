@@ -1,3 +1,6 @@
+import CosmosForgeAffiliateImage from "../assets/cosmosforgeaffiliate.png";
+import BeaningfulCoffeeImage from "../assets/beaningfulcoffee.png";
+import MagtechImage from "../assets/magtech.png";
 import {
   Box,
   Button,
@@ -20,33 +23,33 @@ interface Project {
 }
 
 // images
-const CosmosForgeAffiliatePicture = new URL(
-  "../assets/cosmosforgeaffiliate.png",
-  import.meta.url
-);
-const BeaningfulCoffeePicture = new URL(
-  "../assets/beaningfulcoffee.png",
-  import.meta.url
-);
-const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
+// const CosmosForgeAffiliatePicture = new URL(
+//   "../assets/cosmosforgeaffiliate.png",
+//   import.meta.url
+// );
+// const BeaningfulCoffeePicture = new URL(
+//   "../assets/beaningfulcoffee.png",
+//   import.meta.url
+// );
+// const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
 
 const projects: Project[] = [
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
-    image: CosmosForgeAffiliatePicture.toString(),
+    image: CosmosForgeAffiliateImage,
     link: "/CosmosForgeAffiliate",
   },
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    image: BeaningfulCoffeePicture.toString(),
+    image: BeaningfulCoffeeImage,
     link: "/BeaningfulCoffee",
   },
   {
     title: "Magtech Development",
     description: "Web Design & Development",
-    image: MagtechImage.toString(),
+    image: MagtechImage,
     link: "/Magtech",
   },
 ];

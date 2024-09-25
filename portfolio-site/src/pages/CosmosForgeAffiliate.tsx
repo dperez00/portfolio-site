@@ -1,3 +1,6 @@
+import BeaningfulCoffeeImage from "../assets/beaningfulcoffee.png";
+import MagtechImage from "../assets/magtech.png";
+import GameHubImage from "../assets/gamehub.png";
 import {
   Box,
   Button,
@@ -20,30 +23,30 @@ interface Project {
 }
 
 // images
-const BeaningfulCoffeePicture = new URL(
-  "../assets/beaningfulcoffee.png",
-  import.meta.url
-);
-const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
-const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
+// const BeaningfulCoffeePicture = new URL(
+//   "../assets/beaningfulcoffee.png",
+//   import.meta.url
+// );
+// const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
+// const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
 
 const projects: Project[] = [
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    image: BeaningfulCoffeePicture.toString(),
+    image: BeaningfulCoffeeImage,
     link: "/BeaningfulCoffee",
   },
   {
     title: "Magtech Development",
     description: "Web Design & Development",
-    image: MagtechImage.toString(),
+    image: MagtechImage,
     link: "/Magtech",
   },
   {
     title: "GameHub",
     description: "Web Design & Development",
-    image: GameHubImage.toString(),
+    image: GameHubImage,
     link: "/GameHub",
   },
 ];

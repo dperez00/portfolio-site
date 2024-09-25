@@ -1,3 +1,6 @@
+import CosmosForgeImage from "../assets/cosmosforge.png";
+import CosmosForgeAffiliateImage from "../assets/cosmosforgeaffiliate.png";
+import BeaningfulCoffeeImage from "../assets/beaningfulcoffee.png";
 import {
   Box,
   Button,
@@ -20,36 +23,36 @@ interface Project {
 }
 
 // images
-const CosmosForgePicture = new URL(
-  "../assets/cosmosforge.png",
-  import.meta.url
-);
-const CosmosForgeAffiliatePicture = new URL(
-  "../assets/cosmosforgeaffiliate.png",
-  import.meta.url
-);
-const BeaningfulCoffeePicture = new URL(
-  "../assets/beaningfulcoffee.png",
-  import.meta.url
-);
+// const CosmosForgePicture = new URL(
+//   "../assets/cosmosforge.png",
+//   import.meta.url
+// );
+// const CosmosForgeAffiliatePicture = new URL(
+//   "../assets/cosmosforgeaffiliate.png",
+//   import.meta.url
+// );
+// const BeaningfulCoffeePicture = new URL(
+//   "../assets/beaningfulcoffee.png",
+//   import.meta.url
+// );
 
 const projects: Project[] = [
   {
     title: "Cosmos Forge",
     description: "Web Design & Development",
-    image: CosmosForgePicture.toString(),
+    image: CosmosForgeImage,
     link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
-    image: CosmosForgeAffiliatePicture.toString(),
+    image: CosmosForgeAffiliateImage,
     link: "/CosmosForgeAffiliate",
   },
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    image: BeaningfulCoffeePicture.toString(),
+    image: BeaningfulCoffeeImage,
     link: "/BeaningfulCoffee",
   },
 ];

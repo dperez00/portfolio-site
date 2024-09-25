@@ -1,3 +1,7 @@
+import GameHubImage from "../assets/gamehub.png";
+import BottomRackImage from "../assets/bottomrackclothing.png";
+import CosmosForgeImage from "../assets/cosmosforge.png";
+import CosmosForgeAffiliateImage from "../assets/cosmosforgeaffiliate.png";
 import {
   Box,
   Button,
@@ -20,37 +24,37 @@ interface Project {
 }
 
 // images
-const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
-const BottomRackImage = new URL(
-  "../assets/bottomrackclothing.png",
-  import.meta.url
-);
-const CosmosForgePicture = new URL(
-  "../assets/cosmosforge.png",
-  import.meta.url
-);
-const CosmosForgeAffiliatePicture = new URL(
-  "../assets/cosmosforgeaffiliate.png",
-  import.meta.url
-);
+// const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
+// const BottomRackImage = new URL(
+//   "../assets/bottomrackclothing.png",
+//   import.meta.url
+// );
+// const CosmosForgePicture = new URL(
+//   "../assets/cosmosforge.png",
+//   import.meta.url
+// );
+// const CosmosForgeAffiliatePicture = new URL(
+//   "../assets/cosmosforgeaffiliate.png",
+//   import.meta.url
+// );
 
 const projects: Project[] = [
   {
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
-    image: BottomRackImage.toString(),
+    image: BottomRackImage,
     link: "/BottomRackClothing",
   },
   {
     title: "Cosmos Forge",
     description: "Web Design & Development",
-    image: CosmosForgePicture.toString(),
+    image: CosmosForgeImage,
     link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
-    image: CosmosForgeAffiliatePicture.toString(),
+    image: CosmosForgeAffiliateImage,
     link: "/CosmosForgeAffiliate",
   },
 ];
@@ -78,7 +82,7 @@ const GameHub = () => {
         p={{ base: 4, md: 8 }}
       >
         <Image
-          src={GameHubImage.toString()}
+          src={GameHubImage}
           alt="Magtech Development"
           width="100%"
           height="auto"
