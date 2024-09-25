@@ -19,10 +19,10 @@ interface Project {
   link: string;
 }
 
-const BottomRackImage = new URL(
-  "../assets/bottomrackclothing.png",
-  import.meta.url
-);
+// const BottomRackImage = new URL(
+//   "../assets/bottomrackclothing.png",
+//   import.meta.url
+// );
 const CosmosForge = new URL("../assets/cosmosforge.png", import.meta.url);
 const CosmosForgeAffiliate = new URL(
   "../assets/cosmosforgeaffiliate.png",
@@ -39,7 +39,7 @@ const projects: Project[] = [
   {
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
-    image: BottomRackImage.toString(),
+    image: "../assets/bottomrackclothing.png",
     link: "/BottomRackClothing",
   },
   {
