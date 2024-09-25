@@ -21,7 +21,7 @@ interface Project {
 
 // images
 const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
-const BottomRackClothing = new URL(
+const BottomRackImage = new URL(
   "../assets/bottomrackclothing.png",
   import.meta.url
 );
@@ -38,7 +38,7 @@ const projects: Project[] = [
   {
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
-    image: BottomRackClothing.toString(),
+    image: BottomRackImage.toString(),
     link: "/BottomRackClothing",
   },
   {
