@@ -1,5 +1,6 @@
 import { Box, HStack, List, ListItem, Text } from "@chakra-ui/react";
-import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const BottomLinks = () => {
   return (
@@ -15,14 +16,14 @@ const BottomLinks = () => {
             mb={{ base: 4, md: 0 }}
           >
             <ListItem mr={{ base: 0, md: 10 }}>
-              <Link
+              <ScrollLink
                 to="about"
                 smooth={true}
                 duration={500}
                 style={{ fontSize: "24px" }}
               >
                 About
-              </Link>
+              </ScrollLink>
             </ListItem>
           </Box>
           <Box
@@ -30,14 +31,14 @@ const BottomLinks = () => {
             mb={{ base: 4, md: 0 }}
           >
             <ListItem mr={{ base: 0, md: 10 }}>
-              <Link
+              <ScrollLink
                 to="experience"
                 smooth={true}
                 duration={500}
                 style={{ fontSize: "24px" }}
               >
                 Experience
-              </Link>
+              </ScrollLink>
             </ListItem>
           </Box>
           <Box
@@ -45,26 +46,14 @@ const BottomLinks = () => {
             mb={{ base: 4, md: 0 }}
           >
             <ListItem mr={{ base: 0, md: 10 }}>
-              <Link
+              <ScrollLink
                 to="projects"
                 smooth={true}
                 duration={500}
                 style={{ fontSize: "24px" }}
               >
                 Projects
-              </Link>
-            </ListItem>
-          </Box>
-          <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
-            <ListItem>
-              <Link
-                to="contact"
-                smooth={true}
-                duration={500}
-                style={{ fontSize: "24px" }}
-              >
-                Contact
-              </Link>
+              </ScrollLink>
             </ListItem>
           </Box>
         </List>
