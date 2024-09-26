@@ -1,6 +1,3 @@
-import CosmosForgeImage from "../assets/cosmosforge.png";
-import CosmosForgeAffiliateImage from "../assets/cosmosforgeaffiliate.png";
-import BeaningfulCoffeeImage from "../assets/beaningfulcoffee.png";
 import {
   Box,
   Button,
@@ -22,37 +19,23 @@ interface Project {
   link: string;
 }
 
-// images
-// const CosmosForgePicture = new URL(
-//   "../assets/cosmosforge.png",
-//   import.meta.url
-// );
-// const CosmosForgeAffiliatePicture = new URL(
-//   "../assets/cosmosforgeaffiliate.png",
-//   import.meta.url
-// );
-// const BeaningfulCoffeePicture = new URL(
-//   "../assets/beaningfulcoffee.png",
-//   import.meta.url
-// );
-
 const projects: Project[] = [
   {
     title: "Cosmos Forge",
     description: "Web Design & Development",
-    image: CosmosForgeImage,
+    image: "/assets/cosmosforge.png",
     link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
-    image: CosmosForgeAffiliateImage,
+    image: "/assets/cosmosforgeaffiliate.png",
     link: "/CosmosForgeAffiliate",
   },
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    image: BeaningfulCoffeeImage,
+    image: "/assets/beaningfulcoffee.png",
     link: "/BeaningfulCoffee",
   },
 ];

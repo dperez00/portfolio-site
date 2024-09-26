@@ -1,6 +1,3 @@
-import BeaningfulCoffeeImage from "../assets/beaningfulcoffee.png";
-import MagtechImage from "../assets/magtech.png";
-import GameHubImage from "../assets/gamehub.png";
 import {
   Box,
   Button,
@@ -22,31 +19,23 @@ interface Project {
   link: string;
 }
 
-// images
-// const BeaningfulCoffeePicture = new URL(
-//   "../assets/beaningfulcoffee.png",
-//   import.meta.url
-// );
-// const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
-// const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
-
 const projects: Project[] = [
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    image: BeaningfulCoffeeImage,
+    image: "/assets/beaningfulcoffee.png",
     link: "/BeaningfulCoffee",
   },
   {
     title: "Magtech Development",
     description: "Web Design & Development",
-    image: MagtechImage,
+    image: "/assets/magtech.png",
     link: "/Magtech",
   },
   {
     title: "GameHub",
     description: "Web Design & Development",
-    image: GameHubImage,
+    image: "/assets/gamehub.png",
     link: "/GameHub",
   },
 ];

@@ -15,7 +15,6 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import logo from "../assets/Logo Transparent.png";
 
 const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -23,7 +22,7 @@ const NavBar = () => {
   return (
     <Box px={4}>
       <Flex h={16} alignItems="center" justifyContent="space-between">
-        <Image src={logo} boxSize="70px" />
+        <Image src="/assets/Logo Transparent.png" boxSize="70px" />
         <HStack spacing="20px" display={{ base: "none", md: "flex" }}>
           <Box _hover={{ cursor: "pointer", color: "#67d391" }}>
             <RouterLink to="/" style={{ fontSize: "24px" }}>

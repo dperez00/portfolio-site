@@ -1,6 +1,3 @@
-import MagtechImage from "../assets/magtech.png";
-import GameHubImage from "../assets/gamehub.png";
-import BottomRackClothingImage from "../assets/bottomrackclothing.png";
 import {
   Box,
   Button,
@@ -22,31 +19,23 @@ interface Project {
   link: string;
 }
 
-// images
-// const MagtechImage = new URL("../assets/magtech.png", import.meta.url);
-// const GameHubImage = new URL("../assets/gamehub.png", import.meta.url);
-// const BottomRackClothing = new URL(
-//   "../assets/bottomrackclothing.png",
-//   import.meta.url
-// );
-
 const projects: Project[] = [
   {
     title: "Magtech Development",
     description: "Web Design & Development",
-    image: MagtechImage,
+    image: "/assets/magtech.png",
     link: "/Magtech",
   },
   {
     title: "GameHub",
     description: "Web Design & Development",
-    image: GameHubImage,
+    image: "/assets/gamehub.png",
     link: "/GameHub",
   },
   {
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
-    image: BottomRackClothingImage,
+    image: "/assets/bottomrackclothing.PNG",
     link: "/BottomRackClothing",
   },
 ];

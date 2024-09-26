@@ -1,9 +1,3 @@
-import BottomRackClothingImage from "../assets/bottomrackclothing.png";
-import CosmosForgeImage from "../assets/cosmosforge.png";
-import CosmosForgeAffiliateImage from "../assets/cosmosforgeaffiliate.png";
-import BeaningfulCoffeeImage from "../assets/beaningfulcoffee.png";
-import MagtechImage from "../assets/magtech.png";
-import GameHubImage from "../assets/gamehub.png";
 import {
   Box,
   Button,
@@ -25,57 +19,41 @@ interface Project {
   link: string;
 }
 
-// const BottomRackImage = new URL(
-//   "../assets/bottomrackclothing.png",
-//   import.meta.url
-// );
-// const CosmosForge = new URL("../assets/cosmosforge.png", import.meta.url);
-// const CosmosForgeAffiliate = new URL(
-//   "../assets/cosmosforgeaffiliate.png",
-//   import.meta.url
-// );
-// const BeaningfulCoffee = new URL(
-//   "../assets/beaningfulcoffee.png",
-//   import.meta.url
-// );
-// const Magtech = new URL("../assets/magtech.png", import.meta.url);
-// const GameHub = new URL("../assets/gamehub.png", import.meta.url);
-
 const projects: Project[] = [
   {
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
-    image: BottomRackClothingImage,
+    image: "/assets/bottomrackclothing.PNG",
     link: "/BottomRackClothing",
   },
   {
     title: "Cosmos Forge",
     description: "Web Design & Development",
-    image: CosmosForgeImage,
+    image: "/assets/cosmosforge.png",
     link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
     description: "Theme Customization",
-    image: CosmosForgeAffiliateImage,
+    image: "/assets/cosmosforgeaffiliate.png",
     link: "/CosmosForgeAffiliate",
   },
   {
     title: "Beaningful Coffee",
     description: "Web Design & Development",
-    image: BeaningfulCoffeeImage,
+    image: "/assets/beaningfulcoffee.png",
     link: "/BeaningfulCoffee",
   },
   {
     title: "Magtech Development",
     description: "Web Design & Development",
-    image: MagtechImage,
+    image: "/assets/magtech.png",
     link: "/Magtech",
   },
   {
     title: "GameHub",
     description: "Web Design & Development",
-    image: GameHubImage,
+    image: "/assets/gamehub.png",
     link: "/GameHub",
   },
 ];

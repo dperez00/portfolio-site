@@ -9,10 +9,6 @@ import {
   Image,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import laptop from "../assets/laptop picture.jpg";
-import screens from "../assets/money screens.jpg";
-import languages from "../assets/coding languages.png";
-import coding from "../assets/coding.jpg";
 
 const AboutMe = () => {
   const headingFontSize = useBreakpointValue({ base: "32px", md: "48px" });
@@ -54,16 +50,16 @@ const AboutMe = () => {
           mb={marginBottom}
         >
           <Card maxW="300px" maxH="200px">
-            <Image src={laptop} boxSize="100%" />
+            <Image src="/assets/laptop picture.jpg" boxSize="100%" />
           </Card>
           <Card maxW="300px" maxH="200px">
-            <Image src={screens} boxSize="100%" />
+            <Image src="/assets/money screens.jpg" boxSize="100%" />
           </Card>
           <Card maxW="300px" maxH="300px">
-            <Image src={languages} boxSize="100%" />
+            <Image src="/assets/coding languages.png" boxSize="100%" />
           </Card>
           <Card maxW="300px" maxH="300px">
-            <Image src={coding} boxSize="100%" />
+            <Image src="/assets/coding.jpg" boxSize="100%" />
           </Card>
         </SimpleGrid>
       </Flex>
