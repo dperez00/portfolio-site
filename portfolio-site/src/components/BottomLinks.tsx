@@ -1,5 +1,4 @@
 import { Box, HStack, List, ListItem, Text } from "@chakra-ui/react";
-import { Link as RouterLink } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 const BottomLinks = () => {
