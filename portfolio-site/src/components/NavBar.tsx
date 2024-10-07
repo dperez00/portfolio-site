@@ -94,58 +94,46 @@ const NavBar = () => {
                 Home
               </RouterLink>
             </Box>
-            <Box
-              _hover={{ cursor: "pointer", color: "#67d391" }}
-              mb={4}
-              onClick={onClose}
-            >
+            <Box _hover={{ cursor: "pointer", color: "#67d391" }} mb={4}>
               <ScrollLink
                 to="about"
                 smooth="easeInOutQuart"
                 duration={900}
                 style={{ fontSize: "24px" }}
+                onClick={onClose}
               >
                 About
               </ScrollLink>
             </Box>
-            <Box
-              _hover={{ cursor: "pointer", color: "#67d391" }}
-              mb={4}
-              onClick={onClose}
-            >
+            <Box _hover={{ cursor: "pointer", color: "#67d391" }} mb={4}>
               <ScrollLink
                 to="experience"
                 smooth="easeInOutQuart"
                 duration={900}
                 style={{ fontSize: "24px" }}
+                onClick={onClose}
               >
                 Experience
               </ScrollLink>
             </Box>
-            <Box
-              _hover={{ cursor: "pointer", color: "#67d391" }}
-              mb={4}
-              onClick={onClose}
-            >
+            <Box _hover={{ cursor: "pointer", color: "#67d391" }} mb={4}>
               <ScrollLink
                 to="projects"
                 smooth="easeInOutQuart"
                 duration={900}
                 style={{ fontSize: "24px" }}
+                onClick={onClose}
               >
                 Projects
               </ScrollLink>
             </Box>
-            <Box
-              _hover={{ cursor: "pointer", color: "#67d391" }}
-              mb={4}
-              onClick={onClose}
-            >
+            <Box _hover={{ cursor: "pointer", color: "#67d391" }} mb={4}>
               <ScrollLink
                 to="contact"
                 smooth="easeInOutQuart"
                 duration={900}
                 style={{ fontSize: "24px" }}
+                onClick={onClose}
               >
                 Contact Me
               </ScrollLink>
