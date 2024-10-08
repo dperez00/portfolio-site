@@ -20,7 +20,7 @@ const NavBar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box px={4}>
+    <Box px={4} top={0} zIndex={1} boxShadow="md">
       <Flex h={16} alignItems="center" justifyContent="space-between">
         <Image src="/assets/Logo Transparent.png" boxSize="70px" />
         <HStack spacing="20px" display={{ base: "none", md: "flex" }}>
