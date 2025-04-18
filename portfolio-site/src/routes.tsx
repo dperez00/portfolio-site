@@ -8,6 +8,7 @@ import BeaningfulCoffee from "./pages/BeaningfulCoffee";
 import Magtech from "./pages/Magtech";
 import GameHub from "./pages/GameHub";
 import ScrollToTop from "./components/ScrollToTop";
+import Klimate from "./pages/Klimate";
 
 /* We switched from using "Router" in this component to using "Switch" and "Route".
 We did this because we can't use "Router" in this component and in our Main.tsx file.
@@ -28,6 +29,7 @@ const AppRouter = () => {
         <Route path="/BeaningfulCoffee" element={<BeaningfulCoffee />} />
         <Route path="/Magtech" element={<Magtech />} />
         <Route path="/GameHub" element={<GameHub />} />
+        <Route path="/Klimate" element={<Klimate />} />
         {/* add more routes for other projects if neccessary */}
       </Routes>
     </>

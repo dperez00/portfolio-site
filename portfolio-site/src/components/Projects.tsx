@@ -56,6 +56,12 @@ const projects: Project[] = [
     image: "/assets/gamehub.png",
     link: "/GameHub",
   },
+  {
+    title: "Klimate",
+    description: "Web Design & Development",
+    image: "/assets/Klimate.png",
+    link: "/Klimate",
+  },
 ];
 
 const Projects = () => {
