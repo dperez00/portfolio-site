@@ -21,16 +21,16 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Klimate",
+    description: "Web Design & Development",
+    image: "/assets/Klimate.png",
+    link: "/Klimate",
+  },
+  {
     title: "Bottom Rack Clothing",
     description: "Web Design & Development",
     image: "/assets/bottomrackclothing.PNG",
     link: "/BottomRackClothing",
-  },
-  {
-    title: "Cosmos Forge",
-    description: "Web Design & Development",
-    image: "/assets/cosmosforge.png",
-    link: "/CosmosForge",
   },
   {
     title: "Cosmos Forge Affiliate",
@@ -64,7 +64,7 @@ const GameHub = () => {
       >
         <Image
           src="/assets/gamehub.png"
-          alt="Magtech Development"
+          alt="gamehub"
           width="100%"
           height="auto"
           style={{ maxWidth: "900px", minHeight: "400px" }}
