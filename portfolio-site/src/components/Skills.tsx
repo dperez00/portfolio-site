@@ -29,6 +29,8 @@ const Skills = () => {
       { name: "Material UI" },
     ],
     [
+      { name: "Tailwind CSS" },
+      { name: "Shadcn/UI" },
       { name: "Git" },
       { name: "GitHub" },
       { name: "GitHub Copilot" },
