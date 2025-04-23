@@ -64,8 +64,8 @@ const Klimate = () => {
         p={{ base: 4, md: 8 }}
       >
         <Image
-          src="/assets/gamehub.png"
-          alt="Magtech Development"
+          src="/assets/Klimate.png"
+          alt="Klimate"
           width="100%"
           height="auto"
           style={{ maxWidth: "900px", minHeight: "400px" }}
@@ -85,42 +85,65 @@ const Klimate = () => {
             Who
           </Text>
           <Text as="p" fontSize={{ base: "md", md: "lg" }}>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
-            dolorem doloremque similique rem optio natus facere beatae aut et
-            minima! Placeat voluptates aut voluptatum eveniet vero eligendi
-            voluptas repudiandae atque.
             <Link
-              href="https://game-hub-1-five.vercel.app/"
+              href="https://klimate-psi.vercel.app/"
               isExternal
               color="#67d391"
             >
-              GameHub
+              Klimate
             </Link>{" "}
-            lorem ipsum
+            is a beautiful weather app with features like current weather,
+            forecast, graphical representation for next 24 hour temperatures,
+            search any city in the world, light/dark mode, and is fully
+            responsive.
           </Text>
           <Text as="h3" fontSize="24px" mt="20px" mb="10px" fontWeight="bold">
             The Challenge
           </Text>
           <Text as="p" fontSize="18px">
-            lorem ipsum dolor sit amet consectetur adipisicing elit.
+            The challenge was to create a weather app that is not only
+            functional but also visually appealing. I wanted to ensure that the
+            app was user-friendly and provided all the necessary information at
+            a glance.
           </Text>
           <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Solution
           </Text>
           <Text as="p" fontSize={{ base: "md", md: "lg" }}>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-            libero ratione a beatae voluptatibus laboriosam sed facilis impedit
-            harum reprehenderit porro vitae, quis ab cumque officia esse,
-            ducimus ex accusantium?
+            I developed this application using React and TypeScript as the core
+            foundation, providing strong type safety and component reusability
+            throughout the codebase. For the frontend architecture, I leveraged
+            Shadcn/UI components alongside Tailwind CSS for efficient styling
+            and responsive design implementation. To handle API interactions
+            efficiently, I implemented TanStack Query (formerly React Query) for
+            data fetching, caching, and state management, which significantly
+            improved performance by minimizing unnecessary network requests. The
+            weather data visualization is powered by Recharts, enabling
+            interactive and responsive graphical representations of 24-hour
+            temperature forecasts. The application architecture follows modern
+            best practices with custom hooks for data fetching, context for
+            state management, and component composition for UI modularity. I
+            also implemented features like theme switching between light/dark
+            modes using React context and localStorage persistence, ensuring a
+            seamless user experience across sessions.
           </Text>
           <Text as="h3" fontSize={{ base: "lg", md: "2xl" }} fontWeight="bold">
             The Result
           </Text>
           <Text as="p" fontSize={{ base: "md", md: "lg" }}>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
-            laudantium similique ipsum consectetur enim facere error ipsam quos
-            quo corrupti cumque est minus, quidem odit voluptas id quia, vero
-            tempora?
+            <Text as="p" fontSize={{ base: "md", md: "lg" }}>
+              The outcome was a visually appealing and responsive website that
+              effectively demonstrated my proficiency in React and TypeScript.
+              Utilizing the OpenWeather API, I retrieved and displayed weather
+              data on the site. Shadcn/UI was employed to ensure the site was
+              both aesthetically pleasing and responsive. TanStack Query was
+              integrated to cache data, enhancing the site's performance, while
+              I also implemented features like search history and the ability to
+              save favorite locations using TanStack Query mutations. These
+              features improved user experience by allowing quick access to
+              previously searched locations and personalized content. For a more
+              in-depth look at my project, click the "Klimate" link above.
+            </Text>
           </Text>
         </VStack>
       </Box>
