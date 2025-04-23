@@ -27,10 +27,13 @@ const Skills = () => {
       { name: "Bootstrap" },
       { name: "Chakra UI" },
       { name: "Material UI" },
-    ],
-    [
       { name: "Tailwind CSS" },
       { name: "Shadcn/UI" },
+      { name: "React Testing Library" },
+    ],
+    [
+      { name: "Jest" },
+      { name: "Vitest" },
       { name: "Git" },
       { name: "GitHub" },
       { name: "GitHub Copilot" },
