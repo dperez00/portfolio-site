@@ -33,10 +33,10 @@ const projects: Project[] = [
     link: "/GameHub",
   },
   {
-    title: "Bottom Rack Clothing",
+    title: "Klimate",
     description: "Web Design & Development",
-    image: "/assets/bottomrackclothing.PNG",
-    link: "/BottomRackClothing",
+    image: "/assets/Klimate.png",
+    link: "/Klimate",
   },
 ];
 
